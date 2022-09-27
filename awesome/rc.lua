@@ -31,27 +31,16 @@ do
     end)
 end
 
--- Theme definition
-beautiful.init(gears.filesystem.get_configuration_dir() .. "theme.lua")
+term = "kitty"
+editor = "nvim"
+browser = "firefox"
 
-naughty.config.defaults.icon_size = 48
-
--- Default applications
-terminal    = "kitty"
-editor      = "emacs"
-browser     = "firefox"
-fileman     = "pcmanfm"
-
--- Default modkey.
 modkey = "Mod4"
 
 awful.layout.layouts = {
+    awful.layout.suit.tile,
     awful.layout.suit.floating,
 }
 
--- Load all other functions
-require("bar")
-require("binds")
+require("keys")
 require("menu")
-require("rules")
-require("signals")
