@@ -80,7 +80,9 @@ awful.layout.layouts = {
 }
 -- }}}
 
-require("menu")
+require("bar")
 require("keys")
 require("rules")
+require("menu")
 require("signals")
+
