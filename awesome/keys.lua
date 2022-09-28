@@ -33,6 +33,8 @@ globalkeys = gears.table.join(
     ),
     awful.key({ modkey }, "w", function () mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
+    awful.key({ modkey }, "Tab",      hotkeys_popup.show_help,
+              {description="show help", group="awesome"}),
 
     -- Standard program
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,
@@ -43,7 +45,8 @@ globalkeys = gears.table.join(
               {description = "quit awesome", group = "awesome"}),
 
     -- Prompt
-    awful.key({ modkey }, "r",     function () awful.screen.focused().mypromptbox:run() end,
+    awful.key({ modkey }, "r",     function () 
+        awful.spawn("rofi -show drun") end,
               {description = "run prompt", group = "launcher"})
 
 )
@@ -77,7 +80,7 @@ clientbuttons = gears.table.join(
     awful.button({ }, 1, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
     end),
-    awful.button({ modkey }, 1, function (c)
+    awful.button({ "Shift" }, 1, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.move(c)
     end),
