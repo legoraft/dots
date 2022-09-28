@@ -50,20 +50,18 @@ globalkeys = gears.table.join(
 
 clientkeys = gears.table.join(
 
-    awful.key({ modkey, "Shift" }, "c",      function (c) c:kill()                         end,
+    awful.key({ "Control" }, "q",      function (c) c:kill()                         end,
               {description = "close", group = "client"}),
     awful.key({ modkey }, "f",  awful.client.floating.toggle                     ,
               {description = "toggle floating", group = "client"}),
     awful.key({ "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
-    awful.key({ modkey,           }, "n",
+    awful.key({ modkey }, "z",
         function (c)
-            -- The client currently has the input focus, so it cannot be
-            -- minimized, since minimized clients can't have the focus.
             c.minimized = true
         end ,
         {description = "minimize", group = "client"}),
-    awful.key({ modkey, "Control" }, "n",
+    awful.key({ modkey, "Shift" }, "z",
         function()
             local c = awful.client.restore()
             if c then
