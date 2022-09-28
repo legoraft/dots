@@ -3,15 +3,21 @@ local awful         = require("awful")
 local menubar       = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
+-- Create a launcher widget and a main menu
+
 awesomemenu = {
-    { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
-    { "restart", awesome.restart },
-    { "quit", function() awesome.quit() end },
- }
- 
+    { "Hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+    { "Restart", awesome.restart },
+    { "Logout", function() awesome.quit() end },
+}
+
 mainmenu = awful.menu({ items = {
-        { "Terminal", term },
-        { "Browser", browser },
-        { "Awesome", awesomemenu },
+        { "Terminal", terminal, beautiful.term_icon },
+        { "Browser", browser, beautiful.web_icon },
+        { "Files", fileman, beautiful.folder_icon },
+        { "Awesome", awesomemenu, beautiful.menu_icon },
     }
 })
+
+-- Set the terminal for applications that require it
+ menubar.utils.terminal = terminal 
