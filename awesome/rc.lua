@@ -80,6 +80,8 @@ awful.layout.layouts = {
 }
 -- }}}
 
+beautiful.useless_gap = 1
+
 require("bar")
 require("keys")
 require("rules")
