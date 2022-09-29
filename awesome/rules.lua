@@ -1,23 +1,14 @@
--- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
-require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
-require("awful.hotkeys_popup.keys")
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+require("awful.hotkeys_popup.keys") -- check what happens if removed
+require("awful.autofocus")
 
 awful.rules.rules = {
--- All clients will match this rule.
     { rule = { },
       properties = { 
         border_width = 3,
@@ -27,7 +18,7 @@ awful.rules.rules = {
         keys = clientkeys,
         buttons = clientbuttons,
         screen = awful.screen.preferred,
-        placement = awful.placement.no_overlap+awful.placement.no_offscreen
+        placement = awful.placement.no_overlap+awful.placement.no_offscreen -- awful.placement.centered(client, nil)
      }
     },
 

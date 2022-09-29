@@ -1,18 +1,12 @@
--- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
-require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
-require("awful.hotkeys_popup.keys")
+require("awful.hotkeys_popup.keys") -- check what happens if removed
+require("awful.autofocus")
 
 awful.screen.connect_for_each_screen(function(s)
 
@@ -28,15 +22,12 @@ awful.screen.connect_for_each_screen(function(s)
         widget = wibox.container.margin,
     }
 
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
     s.mylayoutbox = awful.widget.layoutbox(s)
 
     s.mylayoutbox:buttons(gears.table.join(
         awful.button({ }, 1, function () awful.layout.inc( 1) end)
     ))
 
-    -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist {
         screen  = s,
         filter  = awful.widget.tasklist.filter.focused,
@@ -53,9 +44,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     beautiful.tasklist_plain_task_name = true
-    
 
-    -- Create the wibox
     s.mywibox = awful.wibar({ 
         position = "top", 
         screen = s,
@@ -64,7 +53,6 @@ awful.screen.connect_for_each_screen(function(s)
         border_width = 4,
     })
 
-    -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
@@ -80,4 +68,3 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 end)
--- }}}
