@@ -9,7 +9,7 @@ require("awful.hotkeys_popup.keys") -- check what happens if removed
 require("awful.autofocus")
 
 root.buttons(gears.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 3, function () mymainmenu:toggle() end)
 ))
 
 globalkeys = gears.table.join(
