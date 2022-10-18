@@ -1,10 +1,19 @@
+/** 
+* --------------------------
+*    Armor theme for Rofi
+*    By Legoraft
+* --------------------------
+**/
+
+/* Config for icons */
 configuration {
   modi: "drun";
   show-icons: true;
-  display-drun: "";
+  display-drun: "";
   drun-display-format: "{name}";
 }
 
+/* Color scheme, mostly white and black */
 * {
   background: rgba(0, 0, 0, 0.7);
   background-alt: rgba(107, 113, 113, 0.25);
@@ -15,6 +24,7 @@ configuration {
   font: "Lato Regular 12";
 }
 
+/* Set the window to be transparent and fullscreen */
 window {
   transparency: "real";
   fullscreen: true;
@@ -23,6 +33,7 @@ window {
   background-color: @background;
 }
 
+/* Setup the main body for search bar and apps */
 mainbox {
   enabled: true;
   background-color: transparent;
@@ -31,6 +42,7 @@ mainbox {
   padding: 120px;
 }
 
+/* Add search bar size, padding and color */
 inputbar {
   margin: 0% 20% 8% 20%;
   padding: 18px;
@@ -41,22 +53,25 @@ inputbar {
   children: [ "prompt", "entry" ];
 }
 
+/* Make prompt same as search */
 prompt {
   background-color: transparent;
   text-color: inherit;
   width: inherit;
 }
 
+/* Make entry same as search and add placeholder */
 entry {
   cursor: text;
   width: inherit;
+  placeholder: "Search...";
 
   background-color: transparent;
   text-color: inherit;
-  placeholder: "Search...";
   placeholder-color: inherit;
 }
 
+/* Set amount of apps shown */
 listview {
   columns: 9;
   lines: 4;
@@ -65,6 +80,7 @@ listview {
   background-color: transparent;
 }
 
+/* Set element colors and sizes */
 element {
   orientation: vertical;
   spacing: 0;
@@ -80,15 +96,16 @@ element {
   cursor: pointer;
 }
 
+/* Set icon sizes */
 element-icon {
   size: 96px;
-
 
   text-color: inherit;
   background-color: transparent;
   cursor: inherit;
 }
 
+/* Make element backgrounds invisible */
 element normal.normal {
   background-color: transparent;
 }
@@ -97,10 +114,12 @@ element alternate.normal {
   background-color: transparent;
 }
 
+/* Make selected elements highlighted */
 element selected.normal {
   background-color: @selected;
 }
 
+/* Set element text to goood position */
 element-text {
   vertical-align: 0.5;
   horizontal-align: 0.5;
