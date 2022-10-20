@@ -1,2 +1,14 @@
+configuration {
+  hover-select: true;
+  
+  ml-row-up: "";
+  ml-row-down: "";
+  ml-row-left: "ScrollUp";
+  ml-row-right: "ScrollDown";
+
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
+}
+
 @import "~/.config/rofi/armor.rasi"
 @theme "~/.config/rofi/armor.rasi"
