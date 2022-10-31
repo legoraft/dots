@@ -84,6 +84,9 @@ entry {
   background-color: transparent;
   text-color: inherit;
   placeholder-color: inherit;
+  
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
 }
 
 /* Set amount of apps shown */
