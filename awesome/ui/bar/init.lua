@@ -21,6 +21,8 @@ require("awful.hotkeys_popup.keys")
 local dpi = beautiful.xresources.apply_dpi
 
 local helpers = require("helpers")
+local launcher = require "ui.bar.modules.launcher"
+local dash_tgl = require "ui.bar.modules.dash-tgl"
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
@@ -36,7 +38,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                    { "open terminal", terminal }
                                  }
                        })
-
+                       local launcher = require "ui.bar.modules.launcher"
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
@@ -44,6 +46,12 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
+
+spacer = wibox.widget {
+  image = beautiful.spacer,
+  resize = true,
+  widget = wibox.widget.imagebox,
+}
 
 -- Create a wibox for each screen and add it
 
@@ -116,6 +124,9 @@ awful.screen.connect_for_each_screen(function(s)
        layout = wibox.layout.align.horizontal,
        { -- Left widgets
            layout = wibox.layout.fixed.horizontal,
+           dash_tgl,
+           spacer,
+           launcher,
            s.mypromptbox,
        },
        s.mytasklist, -- Middle widget
