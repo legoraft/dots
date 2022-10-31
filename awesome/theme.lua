@@ -9,6 +9,13 @@ local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
 
+local gears = require("gears")
+
+local assets_path = gfs.get_configuration_dir() .. "assets/"
+
+local icons_path = assets_path .. "icons/"
+local utils_path = assets_path .. "utils/"
+
 local theme = {}
 
 theme.font          = "sans 8"
@@ -117,7 +124,15 @@ theme.layout_cornerne = themes_path.."default/layouts/cornernew.png"
 theme.layout_cornersw = themes_path.."default/layouts/cornersww.png"
 theme.layout_cornerse = themes_path.."default/layouts/cornersew.png"
 
+theme.launch_icon = icons_path .. "apps.svg"
+theme.logo_icon = icons_path .. "logo.svg"
+theme.tray_icon = icons_path .. "tray.svg"
+
+theme.spacer = gears.color.recolor_image(utils_path .. "spacer.svg", theme.fg_normal)
+
 theme.useless_gap = dpi(8)
+
+theme.awesome_font = "Font Awesome 6"
 
 -- Generate Awesome icon:
 theme.awesome_icon = theme_assets.awesome_icon(
