@@ -136,7 +136,7 @@ theme.launch_icon = icons_path .. "apps.svg"
 theme.logo_icon = icons_path .. "logo.svg"
 theme.tray_icon = icons_path .. "tray.svg"
 
-theme.spacer = icons_path .. "spacer.svg"
+theme.spacer = utils_path .. "spacer.svg"
 
 theme.useless_gap = dpi(8)
 
