@@ -1,2 +1,2 @@
-@import "~/.config/rofi/armor.rasi"
-@theme "~/.config/rofi/armor.rasi"
+@import "~/.config/rofi/startle.rasi"
+@theme "~/.config/rofi/startle.rasi"
