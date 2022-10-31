@@ -20,22 +20,30 @@ local theme = {}
 
 theme.font          = "sans 8"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
+theme.bg_normal     = theme.black
+theme.bg_focus      = theme.black
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
-theme.bg_systray    = theme.bg_normal
+theme.bg_systray    = theme.black
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = theme.dimblack
+theme.fg_focus      = theme.white
+theme.fg_urgent     = theme.white
+theme.fg_minimize   = theme.dimblack
 
-theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(1)
+theme.border_width  = dpi(0)
 theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
+theme.border_radius = dpi(10)
+
+theme.black = "#111616"
+theme.dimblack = "#222525"
+theme.lightblack = "#3f4646"
+theme.darkwhite = "#b1b8b9"
+theme.dimwhite = "#dde2e3"
+theme.white = "#f3f5f6"
+
 
 -- There are other variable sets
 -- overriding the default one when
@@ -128,11 +136,9 @@ theme.launch_icon = icons_path .. "apps.svg"
 theme.logo_icon = icons_path .. "logo.svg"
 theme.tray_icon = icons_path .. "tray.svg"
 
-theme.spacer = gears.color.recolor_image(utils_path .. "spacer.svg", theme.fg_normal)
+theme.spacer = icons_path .. "spacer.svg"
 
 theme.useless_gap = dpi(8)
-
-theme.awesome_font = "Font Awesome 6"
 
 -- Generate Awesome icon:
 theme.awesome_icon = theme_assets.awesome_icon(
