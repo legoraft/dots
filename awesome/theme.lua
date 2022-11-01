@@ -18,7 +18,7 @@ local utils_path = assets_path .. "utils/"
 
 local theme = {}
 
-theme.font          = "sans 8"
+theme.font          = "Lato 10"
 
 theme.bg_normal     = theme.black
 theme.bg_focus      = theme.black
@@ -44,6 +44,7 @@ theme.darkwhite = "#b1b8b9"
 theme.dimwhite = "#dde2e3"
 theme.white = "#f3f5f6"
 
+theme.red = "#d65e5e"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -86,8 +87,8 @@ theme.menu_width  = dpi(100)
 --theme.bg_widget = "#cc0000"
 
 -- Define the image to load
-theme.titlebar_close_button_normal = themes_path.."default/titlebar/close_normal.png"
-theme.titlebar_close_button_focus  = themes_path.."default/titlebar/close_focus.png"
+theme.titlebar_close_button_normal = gears.color.recolor_image(utils_path .. "close.svg", theme.lightblack)
+theme.titlebar_close_button_focus = gears.color.recolor_image(utils_path .. "close.svg", theme.red)
 
 theme.titlebar_minimize_button_normal = themes_path.."default/titlebar/minimize_normal.png"
 theme.titlebar_minimize_button_focus  = themes_path.."default/titlebar/minimize_focus.png"
