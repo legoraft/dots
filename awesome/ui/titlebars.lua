@@ -18,6 +18,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+local dpi = beautiful.xresources.apply_dpi
+
 local helpers = require "helpers"
 
 client.connect_signal("request::titlebars", function(c)
@@ -33,7 +35,15 @@ client.connect_signal("request::titlebars", function(c)
         end)
     )
 
-    awful.titlebar(c) : setup {
+    local titlebars = awful.titlebar(c, {
+      size = dpi(25),
+      bg_normal = beautiful.black,
+      bg_focus = beautiful.black,
+      fg_normal = beautiful.lightblack,
+      fg_focus = beautiful.white
+    })
+
+    titlebars : setup {
         { -- Left
             buttons = buttons,
             layout  = wibox.layout.fixed.horizontal
@@ -47,7 +57,7 @@ client.connect_signal("request::titlebars", function(c)
             layout  = wibox.layout.flex.horizontal
         },
         { -- Right
-            awful.titlebar.widget.closebutton    (c),
+            awful.titlebar.widget.closebutton(c),
             layout = wibox.layout.fixed.horizontal()
         },
         layout = wibox.layout.align.horizontal
