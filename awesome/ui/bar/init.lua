@@ -18,6 +18,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+
 local dpi = beautiful.xresources.apply_dpi
 
 local helpers = require("helpers")
@@ -93,48 +94,46 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
-   -- Wallpaper
-   set_wallpaper(s)
-
-   awful.tag({ "1" }, s, awful.layout.layouts[1])
+  awful.tag({ "1" }, s, awful.layout.layouts[1])
 
    -- Create a promptbox for each screen
-   s.mypromptbox = awful.widget.prompt()
+  s.mypromptbox = awful.widget.prompt()
 
    -- Create a tasklist widget
-   s.mytasklist = awful.widget.tasklist {
-       screen  = s,
-       filter  = awful.widget.tasklist.filter.currenttags,
-       buttons = tasklist_buttons
-   }
+  s.mytasklist = awful.widget.tasklist {
+    screen  = s,
+    filter  = awful.widget.tasklist.filter.minimizedcurrenttags,
+    buttons = tasklist_buttons
+  }
 
    -- Create the wibox
-   s.mywibox = awful.wibar({ 
+  s.mywibox = awful.wibar({ 
     position = "bottom",
     screen = s,
     width = s.geometry.width - beautiful.useless_gap * 4,
-    height = dpi(30),
-    shape = helpers.roundedrect(12),
+    bg = beautiful.lightblack,
+    height = dpi(35),
+    shape = helpers.roundedrect(15),
   })
 
-  s.mywibox.y = s.geometry.height - beautiful.useless_gap * 4
+  s.mywibox.y = s.geometry.height - beautiful.useless_gap * 5
 
-   -- Add widgets to the wibox
-   s.mywibox:setup {
-       layout = wibox.layout.align.horizontal,
-       { -- Left widgets
-           layout = wibox.layout.fixed.horizontal,
-           dash_tgl,
-           spacer,
-           launcher,
-           s.mypromptbox,
-       },
-       s.mytasklist, -- Middle widget
-       { -- Right widgets
-           layout = wibox.layout.fixed.horizontal,
-           wibox.widget.systray(),
-           mytextclock,
-       },
-   }
+  -- Add widgets to the wibox
+  s.mywibox:setup {
+    layout = wibox.layout.align.horizontal,
+      { -- Left widgets
+        layout = wibox.layout.fixed.horizontal,
+        dash_tgl,
+        spacer,
+        launcher,
+        s.mypromptbox,
+      },
+      s.mytasklist, -- Middle widget
+      { -- Right widgets
+        layout = wibox.layout.fixed.horizontal,
+        wibox.widget.systray(),
+        mytextclock,
+      },
+  }
 end)
 -- }}}
