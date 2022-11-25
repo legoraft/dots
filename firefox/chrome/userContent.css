@@ -1,0 +1,23 @@
+@-moz-document url-prefix(about:home),url-prefix(about:newtab) {
+  body {
+    background-color: #222525 !important;
+  }
+  .logo-and-wordmark .logo {
+    background: url("./ff.svg") no-repeat center center !important;
+		background-size: cover !important;
+  }
+  .logo {
+    width: 7.5rem !important;
+    height: 7.5rem !important;
+    margin: 8rem 2rem 0.5rem 2rem !important;
+  }
+  .search-handoff-button {
+		background: #121717 url("./dd-ff.svg") 16px center no-repeat !important;
+		background-size: 24px !important;
+		border-radius: 16px !important;
+		color: #f3f5f6 !important;
+	}
+  .wordmark {
+    width: 0px !important;
+  }
+}
