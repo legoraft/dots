@@ -1,4 +1,4 @@
----------------------------
+	---------------------------
 -- Default awesome theme --
 ---------------------------
 
@@ -37,7 +37,7 @@ theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
 theme.border_radius = dpi(10)
 
-theme.black = "#111616"
+theme.black = "#121717"
 theme.dimblack = "#222525"
 theme.lightblack = "#3f4646"
 theme.darkwhite = "#b1b8b9"
