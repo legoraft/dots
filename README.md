@@ -6,7 +6,7 @@ The rofi and neovim configs are some things I've worked on, the rofi config is g
 
 ## Firefox
 
-<img src="https://github.com/legoraft/dots/blob/main/assets/firefox.png" width="40%" align="right">
+<img src="https://github.com/legoraft/dots/blob/main/assets/firefox.png?raw=true" width="40%" align="right">
 
 I'm currently working on exporting my theme to the firefox addon site, but the `userContent.css` and `prefs.js` work. 
 
