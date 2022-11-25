@@ -5,4 +5,9 @@ These are the dotfiles I'm currently working on, I'm mainly working to make my a
 The rofi and neovim configs are some things I've worked on, the rofi config is going to be the launcher for my awesome config, and when I've worked out if I'm going to use emacs or neovim, I'll make an extensive config for either.
 
 ## Firefox
-I'm currently working on exporting my theme to the firefox addon site, but the `userContent.css` and `prefs.js` work. To install those, enable  go to `about:config` and enable `toolkit.legacyUserProfileCustomizations.stylesheets`, then add the `chrome` folder to your user (probably located at `.mozilla/firefox/<random characters>.default`. You can also add the `prefs.js` file here, which adds some anti tracking features and disables the firefox password manager.
+
+<img src="https://github.com/legoraft/dots/blob/main/assets/firefox.png" width="40%" align="right">
+
+I'm currently working on exporting my theme to the firefox addon site, but the `userContent.css` and `prefs.js` work. 
+
+To install those, enable  go to `about:config` and enable `toolkit.legacyUserProfileCustomizations.stylesheets`, then add the `chrome` folder to your user (probably located at `.mozilla/firefox/<random characters>.default`. You can also add the `prefs.js` file here, which adds some anti tracking features and disables the firefox password manager, I recommend you use bitwarden instead of this, because it's just better.
