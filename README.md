@@ -8,6 +8,6 @@ The rofi and neovim configs are some things I've worked on, the rofi config is g
 
 <img src="https://github.com/legoraft/dots/blob/main/assets/firefox.png?raw=true" width="40%" align="right">
 
-I'm currently working on exporting my theme to the firefox addon site, but the `userContent.css` and `prefs.js` work. 
+The theme I'm using in the screenshots is the [Cascade Theme](https://addons.mozilla.org/en-US/firefox/addon/cascade-theme) made by me, it uses the same color scheme as the full config and the `userContent.css`.
 
 To install those, enable  go to `about:config` and enable `toolkit.legacyUserProfileCustomizations.stylesheets`, then add the `chrome` folder to your user (probably located at `.mozilla/firefox/<random characters>.default`. You can also add the `prefs.js` file here, which adds some anti tracking features and disables the firefox password manager, I recommend you use bitwarden instead of this, because it's just better.
