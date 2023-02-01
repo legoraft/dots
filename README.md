@@ -1,13 +1,9 @@
 <h1 align = "center">Legoraft's dotfiles</h1>
 
-These are the dotfiles I'm currently working on, I'm mainly working to make my awesome config as beautiful and functional as possible, taking the wallpaper as inspiration. As of commit [2229a0e](https://github.com/legoraft/dots/commit/2229a0e8ce2df88da9ebd5bcf45dfb666e21aa01), this awesome config could be somewhat functional, but I advise not to use it as some features still aren't there, like minimizing and an app launcher.
+These are the dotfiles of the rices I'm working on, check out the different branches to find the one your looking for or take a look in the readme, where all are listed with screenshots.
 
-The rofi and neovim configs are some things I've worked on, the rofi config is going to be the launcher for my awesome config, and when I've worked out if I'm going to use emacs or neovim, I'll make an extensive config for either.
+## Awesome
+the [awesome](https://github.com/legoraft/dots/tree/awesome) rice isn't actively maintained currently, but I may come back to it. It currently works somewhat, but I would advise against using it
 
-## Firefox
-
-<img src="https://github.com/legoraft/dots/blob/main/assets/firefox.png?raw=true" width="40%" align="right">
-
-The theme I'm using in the screenshots is the [Cascade Theme](https://addons.mozilla.org/en-US/firefox/addon/cascade-theme) made by me, it uses the same color scheme as the full config and the `userContent.css`.
-
-To install those, enable  go to `about:config` and enable `toolkit.legacyUserProfileCustomizations.stylesheets`, then add the `chrome` folder to your user (probably located at `.mozilla/firefox/<random characters>.default`. You can also add the `prefs.js` file here, which adds some anti tracking features and disables the firefox password manager, I recommend you use bitwarden instead of this, because it's just better.
+## Gnome Nord
+This is a nord themed rice using the Gnome Desktop environment. I use zsh and have customized most of the default Gnome apps to use the nord theme if they didn't through the gtk theme.
