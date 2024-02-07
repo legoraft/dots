@@ -1,0 +1,19 @@
+# Set format to use machine name before directory
+format = """
+[Debox](bold blue) $all
+"""
+
+# Get editor completions based on this schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Remove newline between prompts
+add_newline = false
+
+# Set succes and error symbol to λ
+[character]
+success_symbol = '[λ](bold green)'
+error_symbol = '[λ](bold red)'
+
+# Hide package module from prompt
+[package]
+disabled = true
