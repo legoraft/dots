@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["custom/search"],
     "modules-center": ["river/window"],
-    "modules-right": ["custom/updates", "clock", "custom/power"],
+    "modules-right": ["custom/updates", "clock", "custom/power"], // Add battery if necessary
     "river/window": {
         "format": "{}"
     },
@@ -11,6 +11,11 @@
         "format": "{:%H:%M}",
         "tooltip": false
     },
+// Uncomment this if battery is used
+//    "battery": {
+//        "format": "{capacity}% {icon}",
+//        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+//    },
     "custom/updates": {
         "format": "{} ",
         "return-type": "json",
