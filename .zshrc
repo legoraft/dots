@@ -1,1 +1,4 @@
-# Created by newuser for 5.9
+# -- Aliases --
+
+# Use ".." instead of "cd .."
+alias ..="cd .."
