@@ -1,0 +1,61 @@
+#!/bin/sh
+
+# -- Application shortcuts --
+
+# Open foot terminal with Super+Shift+Return
+riverctl map normal Super+Shift Return spawn foot
+
+# Run fuzzel with Super+Space
+riverctl map normal Super Space spawn fuzzel
+
+# Take screenshots
+riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh"
+
+# -- Window shortcuts --
+
+# Close window with Super+Shift+W
+riverctl map normal Super+Shift W close
+
+# Exit river with Super+Shift+E
+riverctl map normal Super+Shift E exit
+
+# Snap windows with Super+Shift+arrows
+riverctl map normal Super+Shift Left snap left
+riverctl map normal Super+Shift Right snap right
+
+# Cycle through windows with Super+Tab
+riverctl map normal Super Tab focus-view next
+
+# Move windows with Super + LMB
+riverctl map-pointer normal Super BTN_LEFT move-view
+
+# Resize windows with Super + RMB
+riverctl map-pointer normal Super BTN_RIGHT resize-view
+
+# -- Window rules --
+
+# Make all windows floating
+riverctl rule-add float
+
+# Rivertile as default tiler
+riverctl default-layout rivertile
+
+# -- Colors --
+
+riverctl background-color 0x2e3440
+riverctl border-color-focused 0x4c566a
+riverctl border-color-unfocused 0x3b4252
+
+# -- Autostart --
+
+# Start notification daemon with mako
+riverctl spawn "mako"
+
+# Make widgets quick by starting eww daemon
+riverctl spawn "eww daemon"
+
+# Spawning waybar with simple config
+riverctl spawn "waybar -c $HOME/.config/waybar/config -s $HOME/.config/waybar/style.css"
+
+# Setting background with swaybg
+swaybg -m fill -i Pictures/wallpapers/void-nord.png
