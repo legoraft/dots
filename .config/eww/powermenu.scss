@@ -1,0 +1,42 @@
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord2: #434c5e;
+$nord6: #eceff4;
+$nord11: #bf616a;
+
+* {
+    all: unset;
+}
+
+.powermenu {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.power_box {
+    background-color: $nord0;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    color: $nord6;
+}
+
+.btn_box {
+    font-size: 3rem;
+    margin: 1rem 0;
+
+    button {
+        margin: 0 0.25rem;
+        padding: 0.8rem 2.4rem;
+        border-radius: 1rem;
+
+        background-color: $nord1;
+        color: $nord6;
+
+        &:hover {
+            background-color: $nord2;
+        }
+
+        &:first-child {
+            color: $nord11;
+        }
+    }
+}
