@@ -1,0 +1,32 @@
+{
+    "layer": "top",
+    "modules-left": ["custom/search"],
+    "modules-center": ["river/window"],
+    "modules-right": ["custom/updates", "clock", "custom/power"],
+    "river/window": {
+        "format": "{}"
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+    "custom/updates": {
+        "format": "{} ",
+        "return-type": "json",
+        "tooltip": true,
+        "interval": "once",
+        "exec": "$HOME/.config/waybar/xbps-updates.sh",
+        "on-click": "$HOME/.config/waybar/xbps-updates.sh"
+    },
+    "custom/search": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "fuzzel"
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "eww open --toggle powermenu",
+    }
+}

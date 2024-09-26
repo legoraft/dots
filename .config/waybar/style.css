@@ -1,0 +1,30 @@
+* {
+    border: none;
+    color: #e5e9f0;
+    font-size: 14px;
+    font-family: "Hack Nerd Font", sans-serif;
+}
+
+window#waybar {
+    background: #3b4252;
+}
+
+tooltip {
+    background: #3b4252;
+    border: 1px solid #434c5e;
+}
+
+.module {
+    background: transparent;
+    padding: 0.25rem 1rem 0.25rem 0.8rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#clock, custom-updates {
+    padding: 0.25rem 0 0 0;
+}
+
+#custom-updates:hover, #custom-power:hover, #custom-search:hover {
+    background: #4c566a;
+}
