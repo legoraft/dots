@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["custom/search"],
     "modules-center": ["river/window"],
-    "modules-right": ["custom/updates", "clock", "custom/power"], // Add battery if necessary
+    "modules-right": ["custom/updates", "network", "clock", "custom/power"], // Add battery if necessary
     "river/window": {
         "format": "{}"
     },
@@ -16,6 +16,15 @@
 //        "format": "{capacity}% {icon}",
 //        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
 //    },
+    "network": {
+        "format-wifi": "{icon}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󱈸",
+        "interval": "10",
+        "tooltip-format": "Interface: {ifname}",
+        "tooltip-format-disconnected": "Disconnected!"
+    },
     "custom/updates": {
         "format": "{} ",
         "return-type": "json",
