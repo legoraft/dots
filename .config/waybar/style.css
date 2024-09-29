@@ -16,7 +16,7 @@ tooltip {
 
 .module {
     background: transparent;
-    padding: 0.25rem 1rem 0.25rem 0.8rem;
+    padding: 0.25rem 0.75rem 0.25rem 0.7rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
@@ -25,6 +25,10 @@ tooltip {
     padding: 0.25rem 0 0 0;
 }
 
-#custom-updates:hover, #custom-power:hover, #custom-search:hover {
+#custom-updates:hover, #custom-power:hover, #custom-search:hover, #network:hover {
     background: #4c566a;
+}
+
+#network {
+    margin: 0 0.5rem 0 0;
 }
