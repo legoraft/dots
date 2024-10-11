@@ -7,6 +7,20 @@
       "name": "Nord Dark",
       "appearance": "dark",
       "style": {
+        "border": "#3b4252ff",
+        "border.variant": "#3b4252ff",
+        "border.focused": "#434c5eff",
+        "border.selected": "#434c5eff",
+        "border.transparent": "#00000000",
+        "border.disabled": "#2e3440ff",
+        "elevated_surface.background": "#3b4252ff",
+        "surface.background": "#3b4252ff",
+        "background": "#2e3440ff",
+        "element.background": "#3b4252ff",
+        "element.hover": "#434c5eff",
+        "element.active": "#4c566aff",
+        "element.selected": "#4c566aff",
+        "element.disabled": "#2e3440ff",
         "syntax": {
           "attribute": {
             "color": "#d8dee9ff",
