@@ -113,7 +113,7 @@
         "hint": "#5e81acff",
         "hint.background": "#5e81acaa",
         "hint.border": "#434c5eff",
-        "ignored": "#2e3440ff",
+        "ignored": "#d8dee944",
         "ignored.background": "#2e3440aa",
         "ignored.border": "#3b4252ff",
         "info": "#88c0d0ff",
@@ -137,6 +137,13 @@
         "warning": "#ebcb8bff",
         "warning.background": "#ebcb8baa",
         "warning.border": "#ebcb8bff",
+        "players": [
+          {
+            "cursor": "#d8dee9ff",
+            "background": "#434c5eff",
+            "selection": "#4c566aff"
+          }
+        ],
         "syntax": {
           "attribute": {
             "color": "#d8dee9ff",
