@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["custom/search"],
     "modules-center": ["river/window"],
-    "modules-right": ["custom/updates", "network", "clock", "custom/power"], // Add battery if necessary
+    "modules-right": ["custom/updates", "network", "battery", "clock", "custom/power"], // Add battery if necessary
     "river/window": {
         "format": "{}"
     },
@@ -12,10 +12,10 @@
         "tooltip": false
     },
 // Uncomment this if battery is used
-//    "battery": {
-//        "format": "{capacity}% {icon}",
-//        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
-//    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    },
     "network": {
         "format-wifi": "{icon}",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
