@@ -58,4 +58,4 @@ riverctl spawn "eww daemon"
 riverctl spawn "waybar -c $HOME/.config/waybar/config -s $HOME/.config/waybar/style.css"
 
 # Setting background with swaybg
-riverctl spawn "swaybg -m fill -i Pictures/wallpapers/void-nord.png"
+riverctl spawn "swaybg -m fill -i Pictures/wallpapers/blue-glass.jpg"
