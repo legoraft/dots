@@ -10,8 +10,8 @@
     "after_delay": {
       "milliseconds": 1000
     }
-  }
-"soft_wrap": "editor_width",
-"format_on_save": "off"
-"buffer_font_family": "Office Code Pro"
+  },
+  "soft_wrap": "editor_width",
+  "format_on_save": "off",
+  "buffer_font_family": "Office Code Pro"
 }
