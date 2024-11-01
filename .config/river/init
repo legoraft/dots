@@ -3,7 +3,7 @@
 # -- Application shortcuts --
 
 # Open foot terminal with Super+Shift+Return
-riverctl map normal Super+Shift Return spawn foot
+riverctl map normal Super+Shift Return spawn kitty
 
 # Run fuzzel with Super+Space
 riverctl map normal Super Space spawn fuzzel
@@ -14,7 +14,7 @@ riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh"
 # -- Window shortcuts --
 
 # Close window with Super+Shift+W
-riverctl map normal Super+Shift W close
+riverctl map normal Super W close
 
 # Exit river with Super+Shift+E
 riverctl map normal Super+Shift E exit
