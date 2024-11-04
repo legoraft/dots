@@ -11,7 +11,7 @@
         "format": "{:%H:%M}",
         "tooltip": false
     },
-// Uncomment this if battery is used
+// Uncomment the following if battery is used
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
