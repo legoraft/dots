@@ -11,6 +11,15 @@ Help() {
     echo
 }
 
+if [ $# -eq 0 ]; then
+    Help
+    exit
+fi
+
+if [ ! -d $HOME/Pictures/screenshots ]; then
+    mkdir -p $HOME/Pictures/screenshots
+fi
+
 while getopts ":hfs" option; do
     case $option in
         h) # displays help
