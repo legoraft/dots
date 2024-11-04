@@ -13,12 +13,16 @@ Help() {
 
 if [ $# -eq 0 ]; then
     Help
-    exit
+    exitPATH="$HOME/Pictures/screenshots/$DATE.png"
+
 fi
 
 if [ ! -d $HOME/Pictures/screenshots ]; then
     mkdir -p $HOME/Pictures/screenshots
 fi
+
+SCREENSHOT_DATE=$(date +'%Y-%m-%d_%H.%M.%S')
+SCREENSHOT_PATH="$HOME/Pictures/screenshots/$SCREENSHOT_DATE.png"
 
 while getopts ":hfs" option; do
     case $option in
@@ -26,10 +30,12 @@ while getopts ":hfs" option; do
             Help
             exit;;
         f) # screenshot full screen
-            grim "$HOME/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')"
+            grim $SCREENSHOT_PATH
+            notify-send "Screenshot" "New screenshot saved as $SCREENSHOT_DATE"
             exit;;
         s) # select a portion and screenshot
-            grim -g "$(slurp)" "$HOME/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')"
+            grim -g "$(slurp)" $SCREENSHOT_PATH
+            notify-send "Screenshot" "New screenshot saved as $SCREENSHOT_DATE"
             exit;;
         \?) # catchall
             Help
