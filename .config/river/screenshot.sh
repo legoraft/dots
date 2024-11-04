@@ -1,3 +1,29 @@
 #!/bin/bash
 
-grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')
+Help() {
+    echo "This script is a simple frontend to use grim and slurp in a more simplistic way."
+    echo
+    echo "Syntax: screenshot [-s|f|h]"
+    echo "options:"
+    echo "s     Select a portion of the screen and take a screenshot."
+    echo "f     Screenshot the full screen."
+    echo "h     Display this help message."
+    echo
+}
+
+while getopts ":hfs:" option; do
+    case $option in
+        h) # displays help
+            Help
+            exit;;
+        f) # screenshot full screen
+            grim $HOME/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')
+            exit;;
+        s) # select a portion and screenshot
+            grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')
+            exit;;
+        \?) # catchall
+            Help
+            exit;;
+    esac
+done
