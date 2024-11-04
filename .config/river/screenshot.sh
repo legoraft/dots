@@ -11,16 +11,16 @@ Help() {
     echo
 }
 
-while getopts ":hfs:" option; do
+while getopts ":hfs" option; do
     case $option in
         h) # displays help
             Help
             exit;;
         f) # screenshot full screen
-            grim $HOME/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')
+            grim "$HOME/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')"
             exit;;
         s) # select a portion and screenshot
-            grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')
+            grim -g "$(slurp)" "$HOME/Pictures/screenshots/$(date +'%Y-%m-%d_%H.%M.%S.png')"
             exit;;
         \?) # catchall
             Help
