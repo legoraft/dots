@@ -67,3 +67,6 @@ riverctl spawn "waybar -c $HOME/.config/waybar/config -s $HOME/.config/waybar/st
 
 # Setting background with swaybg
 riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-glass.jpg"
+
+# Starting with pipewire for sound
+riverctl spawn "pipewire"
