@@ -25,10 +25,10 @@ tooltip {
     padding: 0.25rem 0 0 0;
 }
 
-#custom-updates:hover, #custom-power:hover, #custom-search:hover, #network:hover {
+#custom-updates:hover, #custom-power:hover, #custom-search:hover, #network:hover, #battery:hover {
     background: #4c566a;
 }
 
 #network {
-    margin: 0 0.5rem 0 0;
+    margin: 0 0rem 0 0rem;
 }
