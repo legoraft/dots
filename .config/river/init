@@ -40,11 +40,12 @@ riverctl rule-add float
 # Rivertile as default tiler
 riverctl default-layout rivertile
 
-# -- Colors --
+# -- Colors and icons --
 
 riverctl background-color 0x2e3440
 riverctl border-color-focused 0x4c566a
 riverctl border-color-unfocused 0x3b4252
+riverctl xcursor-theme "Bibata-Modern-Classic" 
 
 # -- Autostart --
 
