@@ -13,7 +13,8 @@
     },
 // Uncomment the following if battery is used
     "battery": {
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}%  {icon}",
+        "format-charging": "{capacity}%  󰂄"
         "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
     },
     "network": {
