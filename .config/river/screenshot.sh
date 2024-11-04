@@ -31,11 +31,11 @@ while getopts ":hfs" option; do
             exit;;
         f) # screenshot full screen
             grim $SCREENSHOT_PATH
-            notify-send "Screenshot" "New screenshot saved as $SCREENSHOT_DATE"
+            notify-send -i $SCREENSHOT_PATH "Screenshot" "New screenshot saved as $SCREENSHOT_DATE.png"
             exit;;
         s) # select a portion and screenshot
             grim -g "$(slurp)" $SCREENSHOT_PATH
-            notify-send "Screenshot" "New screenshot saved as $SCREENSHOT_DATE"
+            notify-send -i $SCREENSHOT_PATH "Screenshot" "New screenshot saved as $SCREENSHOT_DATE"
             exit;;
         \?) # catchall
             Help
