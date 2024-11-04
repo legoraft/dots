@@ -11,6 +11,9 @@ riverctl map normal Super Space spawn fuzzel
 # Take screenshots
 riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh"
 
+# Spawn file manager
+riverctl map normal Super F spawn nnn
+
 # -- Window shortcuts --
 
 # Close window with Super+Shift+W
@@ -25,6 +28,10 @@ riverctl map normal Super+Shift Right snap right
 
 # Cycle through windows with Super+Tab
 riverctl map normal Super Tab focus-view next
+
+# Add media buttons
+riverctl map normal XF86MonBrightnessUp spawn "brightnessctl set +5%"
+riverctl map normal XF86MonBrightnessDown spawn "brightnessctl set 5%-"
 
 # Move windows with Super + LMB
 riverctl map-pointer normal Super BTN_LEFT move-view
