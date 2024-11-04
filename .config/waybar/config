@@ -23,7 +23,7 @@
         "format-ethernet": "󰈀",
         "format-disconnected": "󱈸",
         "interval": "10",
-        "tooltip-format": "Interface: {ifname}",
+        "tooltip-format": "Network: {essid}\nInterface: {ifname}",
         "tooltip-format-disconnected": "Disconnected!"
     },
     "custom/updates": {
