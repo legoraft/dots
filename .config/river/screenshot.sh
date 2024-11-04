@@ -13,7 +13,7 @@ Help() {
 
 if [ $# -eq 0 ]; then
     Help
-    exitPATH="$HOME/Pictures/screenshots/$DATE.png"
+    exit
 
 fi
 
