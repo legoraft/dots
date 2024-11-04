@@ -9,8 +9,8 @@ riverctl map normal Super+Shift Return spawn kitty
 riverctl map normal Super Space spawn fuzzel
 
 # Take screenshots
-riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh"
-riverctl map normal None Print spawn ".config/river/screenshot.sh"
+riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh -s"
+riverctl map normal None Print spawn ".config/river/screenshot.sh -f"
 
 # Spawn file manager
 riverctl map normal Super F spawn "kitty 'nnn -P p'"
