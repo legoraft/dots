@@ -12,7 +12,7 @@ riverctl map normal Super Space spawn fuzzel
 riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh"
 
 # Spawn file manager
-riverctl map normal Super F spawn nnn
+riverctl map normal Super F spawn "kitty 'nnn -P p'"
 
 # -- Window shortcuts --
 
