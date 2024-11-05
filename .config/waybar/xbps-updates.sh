@@ -32,7 +32,8 @@ while getopts ":hcu" option; do
       Get_updates
       exit;;
     u) # updates system
-      echo "update"
+      kitty sudo xbps-install -Su
+      Get_updates
       exit;;
     \?) # catchall
       Help
