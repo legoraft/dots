@@ -32,7 +32,7 @@ while getopts ":hcu" option; do
       Get_updates
       exit;;
     u) # updates system
-      kitty sudo xbps-install -Su
+      kitty --session "$HOME/.config/kitty/sessions/updates.conf"
       notify-send "System updated" "The system has updated $pkg_count packages."
       Get_updates
       exit;;
