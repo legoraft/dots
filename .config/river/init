@@ -13,7 +13,7 @@ riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh -s"
 riverctl map normal None Print spawn ".config/river/screenshot.sh -f"
 
 # Spawn file manager
-riverctl map normal Super F spawn "kitty -e nnn -P p $(echo $HOME)"
+riverctl map normal Super F spawn "kitty --session file-manager"
 
 # -- Window shortcuts --
 
