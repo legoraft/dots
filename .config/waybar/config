@@ -31,8 +31,8 @@
         "return-type": "json",
         "tooltip": true,
         "interval": "once",
-        "exec": "$HOME/.config/waybar/xbps-updates.sh",
-        "on-click": "$HOME/.config/waybar/xbps-updates.sh"
+        "exec": "$HOME/.config/waybar/xbps-updates.sh -c",
+        "on-click": "$HOME/.config/waybar/xbps-updates.sh -u"
     },
     "custom/search": {
         "format": "",
