@@ -1,13 +1,16 @@
+(defvar percent 0)
+(defvar icon "󰕾")
+
 (defwindow overlay
     :monitor 0
     :stacking "overlay"
     :focusable false
     :exclusive false
     :geometry (geometry :width "170px" :height "10px" :anchor "center")
-    (progress_bar :percent 75)
+    (progress_bar :icon icon :percent percent)
 )
 
-(defwidget progress_bar [percent]
+(defwidget progress_bar [icon percent]
     (box
         :class "progress_bar"
         :orientation "h"
