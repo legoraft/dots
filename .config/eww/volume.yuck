@@ -1,0 +1,20 @@
+(defwindow overlay
+    :monitor 0
+    :stacking "overlay"
+    :focusable false
+    :exclusive false
+    :geometry (geometry :width "170px" :height "10px" :anchor "center")
+    (progress_bar :percent 75)
+)
+
+(defwidget progress_bar [percent]
+    (box
+        :class "progress_bar"
+        :orientation "h"
+        :halign "center"
+        :valign "center"
+        :space-evenly false
+        (label :text "󰕾" :halign 0.5 :valign "center")
+        (progress :valign "center" :flipped false :value percent :orientation "h")
+    )
+)

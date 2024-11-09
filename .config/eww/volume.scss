@@ -1,0 +1,28 @@
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord2: #434c5e;
+$nord6: #eceff4;
+$nord11: #bf616a;
+
+* {
+    all: unset;
+    font-family: sans-serif, "Nerd Font Symbols";
+}
+
+.progress_bar {
+    background-color: $nord0;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    
+    label {
+        color: $nord6;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    progressbar trough progress {
+        background: $nord6;
+        min-height: 11px;
+        border-radius: 1rem;
+    }
+}
