@@ -11,6 +11,18 @@ Help() {
     echo
 }
 
+Overlay() {
+    percent=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}')
+    percent=${percent:2}
+
+    eww update icon="󰕾" percent=$percent
+    eww open overlay
+    
+    if [ $counter -eq 0 ]; then
+        eww close overlay
+    fi
+}
+
 if [ $# -eq 0 ]; then
     Help
     exit
@@ -23,9 +35,11 @@ while getopts ":hdu" option; do
             exit;;
         d) # screenshot full screen
             wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+            Overlay
             exit;;
         u) # select a portion and screenshot
             wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+            Overlay
             exit;;
         \?) # catchall
             Help
