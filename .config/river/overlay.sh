@@ -6,13 +6,14 @@ icon=""
 percent=0
 
 Help() {
-    echo "A volume script to display an overlay while changing the volume."
+    echo "An overlay script to display an overlay while changing certain settings."
     echo
-    echo "Syntax: volume [-u|d|h]"
+    echo "Syntax: overlay [volume|brightness] [up|down]"
     echo "options:"
-    echo "u     Volume up."
-    echo "d     Volume down."
-    echo "h     Display this help message."
+    echo "volume        adjust the volume"
+    echo "brightness    adjust the brightness"
+    echo "up            increase selected setting"
+    echo "down          decrease selected setting"
     echo
 }
 
