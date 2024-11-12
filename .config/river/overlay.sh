@@ -22,17 +22,15 @@ Overlay() {
     
     sleep 1
     
-    if [ $bar_count -lt 1 ]; then
-        eww close overlay
-    fi
+    eww close overlay
 }
 
-if [ $# -eq 0 ]; then
+if [ $# -lt 2 ]; then
     Help
     exit
 fi
 
-if [ $type == "volume" ]; then
+if [ "$type" == "volume" ]; then
     percent=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}')
     percent=${percent//./}
     icon="󰕾"
