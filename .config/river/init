@@ -34,8 +34,8 @@ riverctl map normal Super Tab focus-view next
 riverctl map normal None XF86MonBrightnessUp spawn "brightnessctl set +5%"
 riverctl map normal None XF86MonBrightnessDown spawn "brightnessctl set 5%-"
 
-riverctl map normal None XF86AudioRaiseVolume spawn ".config/river/volume.sh -u"
-riverctl map normal None XF86AudioLowerVolume spawn ".config/river/volume.sh -d"
+riverctl map normal None XF86AudioRaiseVolume spawn ".config/river/volume.sh volume up"
+riverctl map normal None XF86AudioLowerVolume spawn ".config/river/volume.sh volume down"
 riverctl map normal None XF86AudioMute spawn "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
 # Move windows with Super + LMB

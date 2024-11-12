@@ -1,5 +1,6 @@
 (defvar percent 0)
 (defvar icon "󰕾")
+(defvar bar_count 0)
 
 (defwindow overlay
     :monitor 0
