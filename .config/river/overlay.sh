@@ -18,7 +18,7 @@ Help() {
 }
 
 Overlay() {
-    eww update icon=$icon percent="$percent" && eww open overlay
+    eww update bar_icon=$icon percent="$percent" && eww open overlay
     
     sleep 1
     
