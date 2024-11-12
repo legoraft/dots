@@ -6,7 +6,7 @@
     :stacking "overlay"
     :focusable false
     :exclusive false
-    :geometry (geometry :width "170px" :height "10px" :anchor "center")
+    :geometry (geometry :width "170px" :height "75%" :anchor "center")
     (progress_bar :icon bar_icon :percent percent)
 )
 
@@ -15,7 +15,7 @@
         :class "progress_bar"
         :orientation "h"
         :halign "center"
-        :valign "center"
+        :valign "end"
         :space-evenly false
         (label :text icon :yalign 0.5 :valign "center")
         (progress :valign "center" :flipped false :value percent :orientation "h")
