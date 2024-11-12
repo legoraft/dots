@@ -31,8 +31,8 @@ riverctl map normal Super+Shift Right snap right
 riverctl map normal Super Tab focus-view next
 
 # Add media buttons
-riverctl map normal None XF86MonBrightnessUp spawn "brightnessctl set +5%"
-riverctl map normal None XF86MonBrightnessDown spawn "brightnessctl set 5%-"
+riverctl map normal None XF86MonBrightnessUp spawn ".config/river/overlay.sh brightness up"
+riverctl map normal None XF86MonBrightnessDown spawn ".config/river/overlay.sh brightness down"
 
 riverctl map normal None XF86AudioRaiseVolume spawn ".config/river/overlay.sh volume up"
 riverctl map normal None XF86AudioLowerVolume spawn ".config/river/overlay.sh volume down"
