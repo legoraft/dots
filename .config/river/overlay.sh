@@ -67,7 +67,6 @@ if [ "$type" == "volume" ]; then
         fi
     fi
 elif [ $type == "brightness" ]; then
-    percent=$(brightnessctl i | grep -E -o '[0-9]+' | sed -n 2p)
     icon="󰖨"
     
     if [ $action == "up" ]; then
@@ -75,6 +74,8 @@ elif [ $type == "brightness" ]; then
     elif [ $action == "down" ]; then
         brightnessctl set 5%-
     fi
+    
+    percent=$(brightnessctl i | grep -E -o '[0-9]+' | sed -n 2p)
 fi
 
 Overlay
