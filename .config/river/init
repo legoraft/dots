@@ -36,7 +36,7 @@ riverctl map normal None XF86MonBrightnessDown spawn ".config/river/overlay.sh b
 
 riverctl map normal None XF86AudioRaiseVolume spawn ".config/river/overlay.sh volume up"
 riverctl map normal None XF86AudioLowerVolume spawn ".config/river/overlay.sh volume down"
-riverctl map normal None XF86AudioMute spawn "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+riverctl map normal None XF86AudioMute spawn ".config/river/overlay.sh volume mute"
 
 # Move windows with Super + LMB
 riverctl map-pointer normal Super BTN_LEFT move-view
