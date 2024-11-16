@@ -17,8 +17,8 @@ riverctl map normal Super F spawn "kitty --session $HOME/.config/kitty/sessions/
 
 # -- Window shortcuts --
 
-# Close window with Super+Shift+W
-riverctl map normal Super W close
+# Close window with Super+Q
+riverctl map normal Super Q close
 
 # Exit river with Super+Shift+E
 riverctl map normal Super+Shift E exit
