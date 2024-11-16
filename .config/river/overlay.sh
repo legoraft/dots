@@ -20,7 +20,7 @@ Help() {
 
 Overlay() {
     eww update bar_icon=$icon percent="$percent" && eww open overlay
-    time=$(date "+%s")
+    time=$(date "+%s%N")
     echo $time > /tmp/overlay_time
 
     sleep 2
