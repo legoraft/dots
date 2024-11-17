@@ -24,11 +24,11 @@ riverctl map normal Control F spawn "kitty --session $HOME/.config/kitty/session
 riverctl map normal Super Q close
 
 # Exit river with Super+Shift+E
-riverctl map normal Super+Shift E exit
+riverctl map normal Super+Shift E "eww open --toggle powermenu"
 
 # Snap windows with Super+Shift+arrows
-riverctl map normal Super+Shift Left spawn "riverctl snap left && riverctl resize vertical 100%"
-riverctl map normal Super+Shift Right snap right
+riverctl map normal Super+Shift Left send-layout-cmd rivertile "main-location left"
+riverctl map normal Super+Shift Right send-layout-cmd rivertile "main-location right"
 
 # Cycle through windows with Super+Tab
 riverctl map normal Super Tab focus-view next
