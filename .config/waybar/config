@@ -1,10 +1,14 @@
 {
     "layer": "top",
-    "modules-left": ["custom/search"],
+    "modules-left": ["custom/search", "river/tags"],
     "modules-center": ["river/window"],
     "modules-right": ["custom/updates", "network", "battery", "clock", "custom/power"], // Add battery if necessary
     "river/window": {
         "format": "{}"
+    },
+    "river/tags": {
+        "num-tags": 5,
+        "tag-labels": ["www", "dev", "tty", "fps", "var"],
     },
     "clock": {
         "interval": 60,
