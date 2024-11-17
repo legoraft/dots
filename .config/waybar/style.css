@@ -32,3 +32,17 @@ tooltip {
 #network {
     margin: 0 0rem 0 0rem;
 }
+
+#tags button {
+    padding: 0.1rem 0.5rem;
+}
+
+#tags button:hover {
+    background: #4c566a;
+    border: none;
+    box-shadow: none;
+}
+
+#tags button.focused {
+    background: #8fbcbb;
+}
