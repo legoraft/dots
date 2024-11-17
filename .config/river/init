@@ -75,3 +75,6 @@ riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-glass.jpg"
 
 # Starting with pipewire for sound
 riverctl spawn "pipewire"
+
+# Using keyd to remap keys in applications
+riverctl spawn "keyd-application-mapper -d"
