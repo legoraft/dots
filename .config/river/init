@@ -91,9 +91,6 @@ riverctl spawn "keyd-application-mapper -d"
 
 # -- Window rules --
 
-# Make all windows floating
-# riverctl rule-add float
-
 # Rivertile as default tiler
 riverctl default-layout rivertile
 rivertile -view-padding 4 -outer-padding 4 &
