@@ -27,7 +27,7 @@ riverctl map normal Super Q close
 riverctl map normal Super+Shift E exit
 
 # Snap windows with Super+Shift+arrows
-riverctl map normal Super+Shift Left snap left
+riverctl map normal Super+Shift Left spawn "riverctl snap left && riverctl resize vertical 100%"
 riverctl map normal Super+Shift Right snap right
 
 # Cycle through windows with Super+Tab
@@ -48,14 +48,6 @@ riverctl map-pointer normal Control BTN_LEFT move-view
 
 # Resize windows with Super + RMB
 riverctl map-pointer normal Super BTN_RIGHT resize-view
-
-# -- Window rules --
-
-# Make all windows floating
-riverctl rule-add float
-
-# Rivertile as default tiler
-riverctl default-layout rivertile
 
 # -- Colors and icons --
 
@@ -83,3 +75,12 @@ riverctl spawn "pipewire"
 
 # Using keyd to remap keys in applications
 riverctl spawn "keyd-application-mapper -d"
+
+# -- Window rules --
+
+# Make all windows floating
+# riverctl rule-add float
+
+# Rivertile as default tiler
+riverctl default-layout rivertile
+rivertile -view-padding 4 -outer-padding 4 &
