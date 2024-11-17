@@ -51,11 +51,16 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 
 # -- Workspaces --
 
-riverctl map normal Super 1 set-focused-tags 1
-riverctl map normal Super 2 set-focused-tags 2
-riverctl map normal Super 3 set-focused-tags 3
-riverctl map normal Super 4 set-focused-tags 4
-riverctl map normal Super 5 set-focused-tags 5
+for i in $(seq 1 5)
+do
+    tags=$((1 << ($i - 1)))
+
+    riverctl map normal Super $i set-focused-tags $tags
+    riverctl map normal Control $i set-focused-tags $tags
+
+    riverctl map normal Super+Shift $i set-view-tags $tags
+    riverctl map normal Control+Shift $i set-view-tags $tags
+done
 
 # -- Colors and icons --
 
