@@ -1,2 +1,4 @@
 .config/keyd/app.*
 !.config/keyd/app.conf
+
+startpage/
