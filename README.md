@@ -2,6 +2,12 @@
 
 These are the dotfiles I'm currently using on my computer. They're linked with `stow` and are updated when I reconfigure them. Things can break, so beware. These are mostly for my own use and not particularly made to be used by others.
 
+## Screenshots
+
+![A terminal with nnn opened](./assets/nnn-terminal.png)
+
+![The zed editor with the dotfiles open](./assets/editor.png)
+
 ## Usage
 
 Start by donwloading all the required packages from your package manager. You can copy and paste the following commands for your distribution.
