@@ -89,7 +89,7 @@ riverctl spawn "mako"
 riverctl spawn "eww daemon"
 
 # Spawning waybar with simple config
-riverctl spawn "waybar -c $HOME/.config/waybar/config -s $HOME/.config/waybar/style.css"
+riverctl spawn "waybar -c $HOME/.config/waybar/config.jsonc -s $HOME/.config/waybar/style.css"
 
 # Setting background with swaybg
 riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-glass.jpg"
