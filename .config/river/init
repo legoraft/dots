@@ -100,6 +100,9 @@ riverctl spawn "pipewire"
 # Using keyd to remap keys in applications
 riverctl spawn "keyd-application-mapper -d"
 
+# Start syncthing for note synchronization
+riverctl spawn "syncthing"
+
 # -- Window rules --
 
 # Rivertile as default tiler
