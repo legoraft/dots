@@ -1,5 +1,7 @@
 * {
     border: none;
+    margin: 0;
+    padding: 0;
     color: #e5e9f0;
     font-size: 14px;
     font-family: sans-serif, "Nerd Font Symbols";
@@ -31,6 +33,11 @@ tooltip {
 
 #network {
     margin: 0 0rem 0 0rem;
+}
+
+#tags {
+    margin: 0;
+    padding: 0;
 }
 
 #tags button {
