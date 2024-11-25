@@ -1,7 +1,6 @@
 .progress_bar {
     background-color: $background;
     padding: 0.5rem 1rem;
-    border-radius: 1rem;
     
     label {
         color: $foreground;
@@ -12,12 +11,10 @@
     progressbar trough {
         background: $surface1;
         min-height: 1rem;
-        border-radius: 1rem;
     }
     
     progressbar trough progress {
         background: $accent;
         min-height: 1rem;
-        border-radius: 1rem;
     }
 }
