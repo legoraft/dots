@@ -18,7 +18,7 @@ tooltip {
     background: transparent;
     padding: 0.25rem 0.75rem 0.25rem 0.7rem;
     margin: 0 0.5rem;
-    border-radius: 0.5rem;
+/*    border-radius: 0.5rem; */
 }
 
 #clock, custom-updates {
@@ -40,9 +40,13 @@ tooltip {
 #tags button:hover {
     background: #4c566a;
     border: none;
+    margin: 0;
+    border-radius: 0;
     box-shadow: none;
 }
 
 #tags button.focused {
     background: #8fbcbb;
+    margin: 0;
+    border-radius: 0;
 }
