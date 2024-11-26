@@ -1,4 +1,20 @@
 .notification_center {
-    background-color: $background;
+    background-color: $surface0;
     padding: 1rem;
+}
+
+.notification {
+    background-color: $background;
+    padding: 0.75rem 1.5rem;
+    border: 3px solid $surface2;
+    
+    .title {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
