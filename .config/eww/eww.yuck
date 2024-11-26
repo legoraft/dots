@@ -1,2 +1,3 @@
 (include "powermenu.yuck")
 (include "overlay.yuck")
+(include "notifications.yuck")
