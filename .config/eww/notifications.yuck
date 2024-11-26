@@ -1,22 +1,28 @@
 (defpoll notification_list 
     :interval "1s"
     :initial "[]"
-    `makoctl history | awk -F'[][]' '{print "["$3"]"}'`)
-
-; makoctl history | awk -F'[][]' '{print "["$3"]"}'
+    `makoctl history | awk -F'[][]' '{print "["$3"]"}'`
+)
 
 (defwindow notification_center
     :monitor 0
     :stacking "overlay"
     :windowtype "normal"
-    :geometry (geometry :width "25%" :height "90%" :anchor "top right")
+    :geometry (geometry :width "25%" :height "100%" :anchor "top right")
     (notifications)
 )
 
 (defwidget notifications []
     (box
-        (for notification in notification_list
-            (label :text "${notification.app-name.data}")
+        :orientation "vertical"
+        :space-evenly false
+        (for notif in notification_list
+            (box
+                :orientation "vertical"
+                :space-evenly false
+                (label :text "${notif.summary.data}")
+                (label :text "${notif.body.data}")
+            )
         )
     )
 )
