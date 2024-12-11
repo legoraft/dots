@@ -19,16 +19,7 @@ Help() {
 }
 
 Overlay() {
-    eww update bar_icon=$icon percent="$percent" && eww open overlay
-    time=$(date "+%s%N")
-    echo $time > /tmp/overlay_time
-
-    sleep 2
-    
-    old_time=$(cat /tmp/overlay_time)
-    if [ $old_time -eq $time ] ; then
-        eww close overlay
-    fi
+    echo $percent > /tmp/wobpipe
 }
 
 if [ $# -lt 2 ]; then

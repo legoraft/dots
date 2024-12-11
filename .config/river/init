@@ -103,6 +103,9 @@ riverctl spawn "keyd-application-mapper -d"
 # Start syncthing for note synchronization
 riverctl spawn "syncthing"
 
+# Add wob pipe
+riverctl spawn "mkfifo /tmp/wobpipe && tail -f /tmp/wobpipe | wob"
+
 # -- Window rules --
 
 # Rivertile as default tiler
