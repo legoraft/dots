@@ -23,11 +23,8 @@
     
     "custom/updates": {
         "format": "{} ",
-        "return-type": "json",
-        "tooltip": true,
         "interval": "once",
-        "exec": "$HOME/.config/waybar/xbps-updates.sh -c",
-        "on-click": "$HOME/.config/waybar/xbps-updates.sh -u"
+        "exec": "checkupdates | wc -l"
     },
     
     "custom/search": {
