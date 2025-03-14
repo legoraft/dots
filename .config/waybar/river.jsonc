@@ -4,6 +4,8 @@
     "modules-center": [ "river/window" ],
     "modules-right": [ "custom/power", "clock", "custom/updates" ],
     
+    "include": [ "~/.config/waybar/default-modules.jsonc" ],
+    
     "river/window": {
       "format": "{}"
     },
