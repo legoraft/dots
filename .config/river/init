@@ -7,16 +7,13 @@ riverctl map normal Super+Shift Return spawn kitty
 
 # Run fuzzel with Super+Space or Control+Space for firefox
 riverctl map normal Super Space spawn fuzzel
-riverctl map normal Control Space spawn fuzzel
 
 # Take screenshots
 riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh -s"
-riverctl map normal Control+Shift S spawn ".config/river/screenshot.sh -s"
 riverctl map normal None Print spawn ".config/river/screenshot.sh -f"
 
 # Spawn file manager
 riverctl map normal Super F spawn "kitty --session $HOME/.config/kitty/sessions/file-manager.conf"
-riverctl map normal Control F spawn "kitty --session $HOME/.config/kitty/sessions/file-manager.conf"
 
 # -- Window shortcuts --
 
@@ -44,7 +41,6 @@ riverctl map normal None XF86AudioMute spawn ".config/river/overlay.sh volume mu
 
 # Move windows with Super + LMB
 riverctl map-pointer normal Super BTN_LEFT move-view
-riverctl map-pointer normal Control BTN_LEFT move-view
 
 # Resize windows with Super + RMB
 riverctl map-pointer normal Super BTN_RIGHT resize-view
@@ -67,10 +63,8 @@ do
     tags=$((1 << ($i - 1)))
 
     riverctl map normal Super $i set-focused-tags $tags
-    riverctl map normal Control $i set-focused-tags $tags
 
     riverctl map normal Super+Shift $i set-view-tags $tags
-    riverctl map normal Control+Shift $i set-view-tags $tags
 done
 
 # -- Colors and icons --
@@ -85,9 +79,6 @@ riverctl xcursor-theme "Bibata-Modern-Classic"
 # Start notification daemon with mako
 riverctl spawn "mako"
 
-# Make widgets quick by starting eww daemon
-riverctl spawn "eww daemon"
-
 # Spawning waybar with simple config
 riverctl spawn "waybar -c $HOME/.config/waybar/config.jsonc -s $HOME/.config/waybar/style.css"
 
@@ -96,15 +87,6 @@ riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-glass.jpg"
 
 # Starting with pipewire for sound
 riverctl spawn "pipewire"
-
-# Using keyd to remap keys in applications
-riverctl spawn "keyd-application-mapper -d"
-
-# Start syncthing for note synchronization
-riverctl spawn "syncthing"
-
-# Add wob pipe
-riverctl spawn "mkfifo /tmp/wobpipe && tail -f /tmp/wobpipe | wob"
 
 # -- Window rules --
 
