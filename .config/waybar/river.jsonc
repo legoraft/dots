@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": [ "custom/search", "river/tags" ],
     "modules-center": [ "river/window" ],
-    "modules-right": [ "custom/power", "clock", "custom/updates" ],
+    "modules-right": [ "custom/updates", "network", "battery", "clock", "custom/power" ], // battery can be removed on desktop
     
     "include": [ "~/.config/waybar/default-modules.jsonc" ],
     
