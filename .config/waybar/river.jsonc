@@ -1,0 +1,6 @@
+{
+    "layer": "top",
+    "modules-left": [ "custom/search", "river/workspaces" ],
+    "modules-center": [ "river/window" ],
+    "modules-right": [ "custom/power", "clock" "custom/updates" ]
+}
