@@ -1,13 +1,4 @@
-{
-    "river/window": {
-        "format": "{}"
-    },
-    
-    "river/tags": {
-        "num-tags": 5,
-        "tag-labels": ["www", "dev", "tty", "fps", "var"]
-    },
-    
+{    
     "clock": {
         "interval": 60,
         "format": "{:%H:%M}",

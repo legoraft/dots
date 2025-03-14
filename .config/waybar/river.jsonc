@@ -1,6 +1,15 @@
 {
     "layer": "top",
-    "modules-left": [ "custom/search", "river/workspaces" ],
+    "modules-left": [ "custom/search", "river/tags" ],
     "modules-center": [ "river/window" ],
-    "modules-right": [ "custom/power", "clock" "custom/updates" ]
+    "modules-right": [ "custom/power", "clock", "custom/updates" ],
+    
+    "river/window": {
+      "format": "{}"
+    },
+
+    "river/tags": {
+      "num-tags": 5,
+      "tag-labels": ["www", "dev", "tty", "fps", "var"]
+    }
 }
