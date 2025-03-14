@@ -8,7 +8,7 @@
     },
     "river/tags": {
         "num-tags": 5,
-        "tag-labels": ["www", "dev", "tty", "fps", "var"],
+        "tag-labels": ["www", "dev", "tty", "fps", "var"]
     },
     "clock": {
         "interval": 60,
@@ -46,6 +46,6 @@
     "custom/power": {
         "format": "",
         "tooltip": false,
-        "on-click": "eww open --toggle powermenu",
+        "on-click": "eww open --toggle powermenu"
     }
 }
