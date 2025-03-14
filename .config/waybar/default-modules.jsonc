@@ -1,26 +1,25 @@
 {
-    "layer": "top",
-    "modules-left": ["custom/search", "river/tags"],
-    "modules-center": ["river/window"],
-    "modules-right": ["custom/updates", "network", "battery", "clock", "custom/power"], // Add battery if necessary
     "river/window": {
         "format": "{}"
     },
+    
     "river/tags": {
         "num-tags": 5,
         "tag-labels": ["www", "dev", "tty", "fps", "var"]
     },
+    
     "clock": {
         "interval": 60,
         "format": "{:%H:%M}",
         "tooltip": false
     },
-// Uncomment the following if battery is used
+    
     "battery": {
         "format": "{capacity}%  {icon}",
         "format-charging": "{capacity}%  󰂄",
         "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
     },
+    
     "network": {
         "format-wifi": "{icon}",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -30,6 +29,7 @@
         "tooltip-format": "Network: {essid}\nInterface: {ifname}",
         "tooltip-format-disconnected": "Disconnected!"
     },
+    
     "custom/updates": {
         "format": "{} ",
         "return-type": "json",
@@ -38,14 +38,11 @@
         "exec": "$HOME/.config/waybar/xbps-updates.sh -c",
         "on-click": "$HOME/.config/waybar/xbps-updates.sh -u"
     },
+    
     "custom/search": {
         "format": "",
         "tooltip": false,
         "on-click": "fuzzel"
-    },
-    "custom/power": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "eww open --toggle powermenu"
     }
+    
 }
