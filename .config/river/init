@@ -5,7 +5,7 @@
 # Open foot terminal with Super+Shift+Return
 riverctl map normal Super+Shift Return spawn kitty
 
-# Run fuzzel with Super+Space or Control+Space for firefox
+# Run fuzzel with Super+Space
 riverctl map normal Super Space spawn fuzzel
 
 # Take screenshots
@@ -21,7 +21,7 @@ riverctl map normal Super F spawn "kitty --session $HOME/.config/kitty/sessions/
 riverctl map normal Super Q close
 
 # Exit river with Super+Shift+E
-riverctl map normal Super+Shift E spawn "eww open --toggle powermenu"
+riverctl map normal Super+Shift E exit
 
 # Snap windows with Super+Shift+arrows
 riverctl map normal Super+Shift Left send-layout-cmd rivertile "main-location left"
@@ -80,7 +80,7 @@ riverctl xcursor-theme "Bibata-Modern-Classic"
 riverctl spawn "mako"
 
 # Spawning waybar with simple config
-riverctl spawn "waybar -c $HOME/.config/waybar/config.jsonc -s $HOME/.config/waybar/style.css"
+riverctl spawn "waybar -c $HOME/.config/waybar/river.jsonc -s $HOME/.config/waybar/style.css"
 
 # Setting background with swaybg
 riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-glass.jpg"
