@@ -1,0 +1,6 @@
+[font]
+normal.family = "Hack Nerd Font"
+
+[colors.primary]
+foreground = "#eceff4"
+background = "#2e3440"

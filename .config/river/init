@@ -3,7 +3,7 @@
 # -- Application shortcuts --
 
 # Open foot terminal with Super+Shift+Return
-riverctl map normal Super+Shift Return spawn kitty
+riverctl map normal Super+Shift Return spawn alacritty
 
 # Run fuzzel with Super+Space
 riverctl map normal Super Space spawn fuzzel
