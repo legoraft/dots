@@ -74,7 +74,7 @@ riverctl xcursor-theme "Bibata-Modern-Classic"
 # -- Autostart --
 
 # Start notification daemon with mako
-riverctl spawn "mako"
+riverctl spawn "swaync"
 
 # Spawning waybar with simple config
 riverctl spawn "waybar -c $HOME/.config/waybar/river.jsonc -s $HOME/.config/waybar/style.css"
