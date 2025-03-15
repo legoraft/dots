@@ -12,9 +12,6 @@ riverctl map normal Super Space spawn fuzzel
 riverctl map normal Super+Shift S spawn ".config/river/screenshot.sh -s"
 riverctl map normal None Print spawn ".config/river/screenshot.sh -f"
 
-# Spawn file manager
-riverctl map normal Super F spawn "kitty --session $HOME/.config/kitty/sessions/file-manager.conf"
-
 # -- Window shortcuts --
 
 # Close window with Super+Q
@@ -84,6 +81,9 @@ riverctl spawn "waybar -c $HOME/.config/waybar/river.jsonc -s $HOME/.config/wayb
 
 # Setting background with swaybg
 riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-dragon.png"
+
+# Add wob pipe
+riverctl spawn "mkfifo /tmp/wobpipe && tail -f /tmp/wobpipe | wob"
 
 # -- Window rules --
 
