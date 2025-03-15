@@ -2,3 +2,14 @@ assets
 README.md
 \.gitignore
 \.git
+
+\.config/assets
+\.config/dconf
+\.config/github-copilot
+\.config/gtk-3.0
+\.config/nwg-look
+\.config/pulse
+\.config/systemd/user
+\.config/xsettingsd
+\.config/user-dirs.dirs
+\.config/user-dirs.locale
