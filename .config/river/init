@@ -83,10 +83,7 @@ riverctl spawn "mako"
 riverctl spawn "waybar -c $HOME/.config/waybar/river.jsonc -s $HOME/.config/waybar/style.css"
 
 # Setting background with swaybg
-riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-glass.jpg"
-
-# Starting with pipewire for sound
-riverctl spawn "pipewire"
+riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-dragon.png"
 
 # -- Window rules --
 
