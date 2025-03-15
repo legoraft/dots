@@ -1,0 +1,34 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-margin-right": 10,
+  
+  "notification-window-width": 400,
+  
+  "widgets": [
+    "title",
+    "notifications",
+    "buttons-grid"
+  ],
+  
+  "widget-config": {
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "shutdown now"
+        },
+        {
+          "label": "",
+          "command": "reboot"
+        },
+        {
+          "label": "",
+          "command": "riverctl exit"
+        }
+      ]
+    }
+  }
+}

@@ -73,7 +73,7 @@ riverctl xcursor-theme "Bibata-Modern-Classic"
 
 # -- Autostart --
 
-# Start notification daemon with mako
+# Start notification daemon with swaync
 riverctl spawn "swaync"
 
 # Spawning waybar with simple config
