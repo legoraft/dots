@@ -11,6 +11,14 @@
     },
 
     "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "www",
+        "2": "dev",
+        "3": "tty",
+        "4": "fps",
+        "5": "var"
+      },
       "persistent-workspaces": {
         "*": 5
       }
