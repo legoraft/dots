@@ -85,6 +85,11 @@ riverctl spawn "swaybg -m fill -i $HOME/Pictures/wallpapers/blue-dragon.png"
 # Add wob pipe
 riverctl spawn "mkfifo /tmp/wobpipe && tail -f /tmp/wobpipe | wob"
 
+# Enable idle management
+riverctl spawn "swayidle -w \
+    timeout 60 'swaylock -f -c 000000' \
+    timeout 120 'systemctl suspend'"
+
 # -- Window rules --
 
 # Rivertile as default tiler
