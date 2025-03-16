@@ -2,6 +2,9 @@
 normal.family = "Hack Nerd Font"
 size = 10.0
 
+[window]
+opacity = 0.8
+
 [colors.primary]
 foreground = "#eceff4"
 background = "#2e3440"
