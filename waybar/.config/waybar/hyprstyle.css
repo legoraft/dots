@@ -16,6 +16,7 @@ window#waybar {
     padding: 0 0.75rem 0.1rem 0.7rem;
     margin: 0.25rem 0.5rem;
     border-radius: 0.5rem;
+    transition: 0.5s
 }
 
 #custom-updates:hover, #custom-power:hover, #custom-search:hover, #network:hover, #battery:hover {
