@@ -24,7 +24,8 @@
     "custom/updates": {
         "format": "{} ",
         "interval": "once",
-        "exec": "checkupdates | wc -l"
+        "exec": "checkupdates | wc -l",
+        "tooltip": false
     },
     
     "custom/search": {
