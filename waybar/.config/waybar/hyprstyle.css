@@ -19,8 +19,12 @@ window#waybar {
     transition: 0.5s
 }
 
-#custom-updates:hover, #custom-power:hover, #custom-search:hover, #network:hover, #battery:hover {
+#custom-updates:hover, #custom-notifications:hover, #custom-search:hover, #network:hover, #battery:hover {
     background: #88c0d0;
+}
+
+#custom-notifications {
+    font-size: 1.25rem;
 }
 
 #workspaces button {
