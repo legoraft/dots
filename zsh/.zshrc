@@ -16,6 +16,4 @@ PROMPT='%B%F{10}%2~ %f%b%(!.#.>) '
 
 # -- Applications --
 eval "$(zoxide init zsh)"
-
-# -- Plugins --
-plugins=(zsh-autosuggestions)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
