@@ -8,9 +8,9 @@
   "notification-window-width": 400,
   
   "widgets": [
+    "buttons-grid",
     "title",
-    "notifications",
-    "buttons-grid"
+    "notifications"
   ],
   
   "widget-config": {
@@ -26,7 +26,7 @@
         },
         {
           "label": "",
-          "command": "riverctl exit"
+          "command": "hyprctl dispatch exit"
         }
       ]
     }
