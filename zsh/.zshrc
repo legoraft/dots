@@ -14,5 +14,8 @@ alias cd="z"
 # Only last two folders show
 PROMPT='%B%F{10}%2~ %f%b%(!.#.>) '
 
-# -- Applications
+# -- Applications --
 eval "$(zoxide init zsh)"
+
+# -- Plugins --
+plugins=(zsh-autosuggestions)
