@@ -27,7 +27,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "super-.": "workspace::OpenTerminal"
+      "super-.": "terminal_panel::ToggleFocus"
     }
   }
 ]
