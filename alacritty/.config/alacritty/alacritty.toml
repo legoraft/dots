@@ -29,3 +29,12 @@ blue = "#81a1c1"
 magenta = "#b48ead"
 cyan = "#8fbcbb"
 white = "#eceff4"
+
+[keyboard]
+bindings = [
+    { key = "C", mods = "Super", mode = "~Vi", action = "Copy" },
+    { key = "V", mods = "Super", mode = "~Vi", action = "Paste" },
+    { key = "=", mods = "Super", action = "IncreaseFontSize" },
+    { key = "+", mods = "Super", action = "IncreaseFontSize" },
+    { key = "-", mods = "Super", action = "DecreaseFontSize" }
+]
