@@ -9,7 +9,7 @@
     }
   },
   
-  "modules": [    
+  "modules": [
     {
       "type": "os",
       "key": "dist",
