@@ -69,8 +69,10 @@
     "break",
     
     {
-      "type": "custom",
-      "key": "󰚰"
+      "type": "command",
+      "key": "󰚰",
+      "text": "~/.config/fastfetch/scripts/lifetime.sh",
+      "format": "{result} days installed"
     },
     
     {
