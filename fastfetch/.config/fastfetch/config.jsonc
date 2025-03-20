@@ -64,6 +64,19 @@
       "key": "󱂬",
       "keyColor": "yellow",
       "format": "{1}"
+    },
+    
+    "break",
+    
+    {
+      "type": "custom",
+      "key": "󰚰"
+    },
+    
+    {
+      "type": "uptime",
+      "key": "󰐥",
+      "format": "{2} hrs, {3} mins"
     }
   ]
 }
