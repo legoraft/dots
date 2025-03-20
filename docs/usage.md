@@ -10,4 +10,7 @@ To use a certain module in this repository, you can activate it using the `stow 
 
 Every module in these dotfiles require some dependencies. The window managers require the most dependencies, but all other configs require not that many dependencies.
 
-- ****
+- **alacritty**: The terminal only requires the `Hack Nerd Font` and the `alacritty` program itself.
+- **fastfetch**: Requires the `fastfetch` program and the `Nerd Font Icons` font.
+- **fuzzel**: Fuzzel uses the `Nerd Font Icons` font and needs `fuzzel` itself.
+- **hyprland**:
