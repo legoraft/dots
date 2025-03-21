@@ -22,3 +22,7 @@ eval "$(zoxide init zsh)"
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 fastfetch
+
+# Install Ruby Gems to ~/.gems
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
