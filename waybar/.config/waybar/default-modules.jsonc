@@ -23,7 +23,7 @@
     
   "custom/updates": {
     "format": "{} ",
-    "interval": "once",
+    "interval": "3600",
     "exec": "checkupdates | wc -l",
     "tooltip": false
   },
