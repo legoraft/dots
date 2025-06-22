@@ -1,6 +1,6 @@
 #!/bin/bash
 
-install_date=1742139386
+install_date=1750631508
 current_date=$(date +%s)
 
 elapsed=$(( $current_date - $install_date ))
