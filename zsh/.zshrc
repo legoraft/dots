@@ -6,9 +6,6 @@ alias ..="cd .."
 # Use eza as ls
 alias ls="eza -laG"
 
-# Use zoxide as cd
-alias cd="z"
-
 # Shorten fastfetch command
 alias ff="fastfetch"
 
@@ -17,12 +14,4 @@ alias ff="fastfetch"
 # Only last two folders show
 PROMPT='%B%F{10}%2~ %f%b%(!.#.>) '
 
-# -- Applications --
-eval "$(zoxide init zsh)"
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 fastfetch
-
-# Install Ruby Gems to ~/.gems
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH="$PATH:$GEM_HOME/bin"
