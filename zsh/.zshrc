@@ -10,6 +10,9 @@ alias ll="eza -laH"
 # Shorten fastfetch command
 alias ff="fastfetch"
 
+# -- Variables --
+export PATH="$HOME/.local/bin:$PATH"
+
 # -- Prompt --
 
 # Only last two folders show
