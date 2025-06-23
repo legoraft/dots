@@ -5,6 +5,7 @@ alias ..="cd .."
 
 # Use eza as ls
 alias ls="eza -laG"
+alias ll="eza -laH"
 
 # Shorten fastfetch command
 alias ff="fastfetch"
