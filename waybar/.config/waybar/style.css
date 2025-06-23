@@ -1,27 +1,30 @@
 * {
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #eceff4;
     font-family: Roboto, Nerd Font Symbols, sans;
     font-size: 10px;
 }
 
 window#waybar {
     background-color: #2e3440;
-    color: #eceff4;
+}
+
+.module {
+    background: transparent;
+    margin: 0 0.25rem;
 }
 
 #workspaces button {
-    background-color: transparent;
-    color: black;
     padding: 0 0.4rem;
-    border-radius: 1rem;
-    border: 2px solid #88c0d0;
-    margin: 0.5rem;
+    border-radius: 0.25rem;
 }
 
-#workspaces button.visible {
-    padding: 0 1rem;
+#workspaces button:hover {
     background-color: #88c0d0;
 }
 
 #workspaces button.visible {
-
+    background-color: #88c0d0;
 }
