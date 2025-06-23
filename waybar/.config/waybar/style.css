@@ -4,7 +4,7 @@
     padding: 0;
     color: #eceff4;
     font-family: Roboto, Nerd Font Symbols, sans;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 window#waybar {
@@ -17,8 +17,8 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 0.4rem;
-    border-radius: 0.25rem;
+    padding: 0px 0.25rem;
+    border-radius: 0.5rem;
 }
 
 #workspaces button:hover {
