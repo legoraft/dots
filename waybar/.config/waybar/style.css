@@ -13,7 +13,7 @@ window#waybar {
 .modules-left, .modules-right, .modules-center {
     background: rgba(46, 52, 64, 0.6);
     border-radius: 0.5rem;
-    margin: 0.1rem;
+    margin: 0.2rem;
 }
 
 .module {
@@ -23,19 +23,18 @@ window#waybar {
 }
 
 #workspaces button {
-    border-radius: 1rem;
-    min-height: 0;
-    color: transparent;
-    background: #434c5e;
-    margin: 0.2rem 0.2rem;
+    all: unset;
+    background: transparent;
+    color: #3b4252;
+    margin: 0 0.2rem;
+    padding-top: 0.1rem;
 }
 
 #workspaces button:hover {
-    background: #88c0d0;
+    color: #4c566a;
 }
 
 #workspaces button.visible {
-    padding: 0 0.5rem;
-    transition: padding 0.1s;
-    background: #88c0d0;
+    background: transparent;
+    color: #88c0d0;
 }
