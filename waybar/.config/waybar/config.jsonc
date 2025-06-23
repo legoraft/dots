@@ -1,5 +1,6 @@
 {
   "layer": "top",
+  "height": 15,
   "modules-left": [ "clock" ],
   "modules-center": [ "hyprland/workspaces" ],
   "modules-right": [  ],
@@ -10,7 +11,7 @@
   },
 
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": "",
     "format-icons": {
       "1": "󰖟",
       "2": "",

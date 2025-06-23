@@ -2,23 +2,27 @@
     border: none;
     margin: 0;
     padding: 0;
-    color: #eceff4;
     font-family: Roboto, Nerd Font Symbols, sans;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 window#waybar {
+    all: unset;
     background-color: #2e3440;
 }
 
 .module {
     background: transparent;
-    margin: 0.25rem 0.5rem;
+    color: #eceff4;
+    margin: 0.2rem 0.5rem;
 }
 
 #workspaces button {
-    padding: 0px 0.25rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    min-height: 0;
+    color: transparent;
+    background-color: #434c5e;
+    margin: 0.2rem 0.2rem;
 }
 
 #workspaces button:hover {
@@ -26,5 +30,7 @@ window#waybar {
 }
 
 #workspaces button.visible {
+    padding: 0 0.5rem;
+    transition: padding 0.1s;
     background-color: #88c0d0;
 }
