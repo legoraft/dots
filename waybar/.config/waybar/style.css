@@ -1,0 +1,27 @@
+* {
+    font-family: Roboto, Nerd Font Symbols, sans;
+    font-size: 10px;
+}
+
+window#waybar {
+    background-color: #2e3440;
+    color: #eceff4;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: black;
+    padding: 0 0.4rem;
+    border-radius: 1rem;
+    border: 2px solid #88c0d0;
+    margin: 0.5rem;
+}
+
+#workspaces button.visible {
+    padding: 0 1rem;
+    background-color: #88c0d0;
+}
+
+#workspaces button.visible {
+
+}
