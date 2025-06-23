@@ -1,0 +1,11 @@
+{
+  "layer": "top",
+  "modules-left": [ "clock" ],
+  "modules-center": [ "hyprland/workspaces" ],
+  "modules-right": [  ],
+  
+  "clock": {
+    "format": "{:%a %d %b %H:%M}",
+    "timezone": "Europe/Amsterdam"
+  }
+}
