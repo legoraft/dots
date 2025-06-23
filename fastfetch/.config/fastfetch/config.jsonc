@@ -72,7 +72,7 @@
     {
       "type": "command",
       "key": "󰚰",
-      "text": "~/.config/fastfetch/scripts/lifetime.sh",
+      "text": "lifetime -p",
       "format": "{result} days installed"
     },
     
