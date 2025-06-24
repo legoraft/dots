@@ -4,9 +4,11 @@ These are the dotfiles I'm currently using on my computer. They're linked with `
 
 ## Screenshots
 
-![A terminal with nnn opened](./assets/nnn-terminal.png)
+![An empty desktop with waybar on top](./assets/desktop.png)
 
-![The zed editor with the dotfiles open](./assets/editor.png)
+![The zen browser with a glance homepage open](./assets/browser.png)
+
+![A bunch of terminals with different outputs](./assets/terminals.png)
 
 ## Usage
 
