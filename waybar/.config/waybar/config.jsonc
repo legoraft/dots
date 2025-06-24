@@ -41,9 +41,22 @@
     "on-click": "hyprctl dispatch exit"
   },
   
-  "network": {},
+  "network": {
+    "interval": 60,
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+      "ethernet": [ "󰌹" ],
+      "disconnected": [ "󰌺" ]
+    }
+  },
   
-  "battery": {},
+  "battery": {
+    "interval": 60,
+    "format": "{icon}",
+    "format-icons": [ "", "", "", "", "" ]
+    "format-charging": "{capacity}% "
+  },
   
   "clock": {
     "format": "{:%H:%M}",
