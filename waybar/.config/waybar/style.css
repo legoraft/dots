@@ -53,7 +53,7 @@ window#waybar {
 
 #power, #settings {
     border-radius: 0.5rem;
-    transition: background 1s;
+    transition: background 0.3s;
 }
 
 #power:hover, #settings:hover {
