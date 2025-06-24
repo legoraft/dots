@@ -25,19 +25,19 @@
   
   "custom/power": {
     "format": "",
-    "tooltip": "false",
+    "tooltip": false,
     "on-click": "shutdown now"
   },
   
   "custom/reboot": {
     "format": "",
-    "tooltip": "false",
+    "tooltip": false,
     "on-click": "reboot"
   },
   
   "custom/logout": {
     "format": "󰍃",
-    "tooltip": "false",
+    "tooltip": false,
     "on-click": "hyprctl dispatch exit"
   },
   
