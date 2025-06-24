@@ -8,13 +8,20 @@
   "group/power": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": "300",
+      "transition-duration": 300,
       "children-class": "power-child"
     },
     "modules": [ "custom/power", "custom/reboot", "custom/logout" ]
   },
   
-  "group/settings": {},
+  "group/settings": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "settings-child"
+    },
+    "modules": [ "backlight", "wireplumber" ]
+  },
   
   "custom/updates": {
     "format": " {}",
