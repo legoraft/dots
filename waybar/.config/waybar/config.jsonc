@@ -25,7 +25,7 @@
   },
   
   "custom/updates": {
-    "format": " {}",
+    "format": "  {}",
     "interval": 1800,   
     "exec": "checkupdates | wc -l",
     "tooltip": false
@@ -83,7 +83,7 @@
   },
   
   "clock": {
-    "format": "{:%H:%M}",
+    "format": "{:%H : %M}",
     "timezone": "Europe/Amsterdam"
   },
 
