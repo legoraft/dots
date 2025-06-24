@@ -20,7 +20,7 @@
       "transition-duration": 300,
       "children-class": "settings-child"
     },
-    "modules": [ "backlight", "wireplumber" ]
+    "modules": [ "custom/settings", "backlight", "wireplumber" ]
   },
   
   "custom/updates": {
@@ -46,6 +46,11 @@
     "format": "󰍃",
     "tooltip": false,
     "on-click": "hyprctl dispatch exit"
+  },
+  
+  "custom/settings": {
+    "format": "",
+    "tooltip": false
   },
   
   "backlight": {
