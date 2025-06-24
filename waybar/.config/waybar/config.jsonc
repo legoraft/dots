@@ -56,11 +56,11 @@
   
   "backlight": {
     "interval": 1,
-    "format": "{percent}%  󰌶"
+    "format": "{percent}% 󰌶"
   },
   
   "wireplumber": {
-    "format": "{volume}%  {icon}",
+    "format": "{volume}% {icon}",
     "format-icons": [ "", "", "" ],
     "format-muted": ""
   },
@@ -79,7 +79,7 @@
     "interval": 60,
     "format": "{icon}",
     "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
-    "format-charging": "{capacity}%  󰂄"
+    "format-charging": "{capacity}% 󰂄"
   },
   
   "clock": {
