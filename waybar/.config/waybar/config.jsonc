@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "height": 23,
+  "height": 40,
   "modules-left": [ "group/power", "clock", "custom/updates" ],
   "modules-center": [ "hyprland/workspaces" ],
   "modules-right": [ "group/settings", "group/network-group", "group/battery-group" ],
