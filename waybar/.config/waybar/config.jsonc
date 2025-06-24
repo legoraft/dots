@@ -3,7 +3,7 @@
   "height": 40,
   "modules-left": [ "group/power", "clock", "custom/updates" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "group/settings", "group/network-group", "group/battery-group" ],
+  "modules-right": [ "group/settings", "group/tray-group", "group/network-group", "group/battery-group" ],
   
   "group/power": {
     "orientation": "inherit",
@@ -22,6 +22,16 @@
       "transition-left-to-right": false
     },
     "modules": [ "custom/settings", "temperature", "cpu", "memory", "backlight", "wireplumber" ]
+  },
+  
+  "group/tray-group": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "tray-child",
+      "transition-left-to-right": false
+    },
+    "modules": [ "custom/expand", "tray" ]
   },
   
   "group/network-group": {
@@ -74,6 +84,11 @@
     "tooltip": false
   },
   
+  "custom/expand": {
+    "format": "󰪥",
+    "tooltip": false
+  },
+  
   "temperature": {
     "tooltip": false,
     "format": "{temperatureC}° {icon}",
@@ -117,6 +132,11 @@
     "format-muted": "",
     "tooltip": false,
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  
+  "tray": {
+    "icon-size": 16,
+    "spacing": 5
   },
   
   "network": {
