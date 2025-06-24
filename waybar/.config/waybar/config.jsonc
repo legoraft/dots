@@ -77,7 +77,7 @@
   "backlight": {
     "interval": 1,
     "tooltip": false,
-    "format": "{percent}% 󰌶"
+    "format": "{percent}% 󰌵"
   },
   
   "wireplumber": {
