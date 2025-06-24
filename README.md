@@ -4,7 +4,6 @@ These are the dotfiles I'm currently using on my computer. They're linked with `
 
 ## Screenshots
 
-<img src="./assets/desktop.png" width="49%" alt="An empty desktop with waybar on top">   <img src="./assets/browser.png" width="49%" alt="The zen browser with a glance homepage open">
-
+<img src="./assets/desktop.png" width="49%" alt="An empty desktop with waybar on top"> &nbsp; <img src="./assets/browser.png" width="49%" alt="The zen browser with a glance homepage open">
 
 <img src="./assets/terminals.png" width="49%" alt="A bunch of terminals with different outputs">
