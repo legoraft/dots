@@ -36,7 +36,7 @@ window#waybar {
 
 #workspaces button.visible {
     background: transparent;
-    color: rgba(46, 52, 64 0.6);
+    color: rgba(46, 52, 64, 0.6);
 }
 
 #custom-power:hover {
