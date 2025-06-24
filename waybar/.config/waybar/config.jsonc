@@ -16,7 +16,12 @@
   
   "group/settings": {},
   
-  "custom/updates": {},
+  "custom/updates": {
+    "format": " {}",
+    "interval": 1800,   
+    "exec": "checkupdates | wc -l",
+    "tooltip": false
+  },
   
   "custom/power": {
     "format": "",
