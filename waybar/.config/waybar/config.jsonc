@@ -100,10 +100,10 @@
   },
   
   "network#name": {
-    "interval": 60,
+    "interval": 2,
     "tooltip": false,
-    "format-wifi": "{bandwidthDownBytes} {signalStrength}% {essid}",
-    "format-ethernet": "{bandwidthDownBytes} {ifname}"
+    "format-wifi": "{bandwidthTotalBytes} {signalStrength}% {essid}",
+    "format-ethernet": "{bandwidthTotalBytes} {ifname}"
   },
   
   "battery": {
