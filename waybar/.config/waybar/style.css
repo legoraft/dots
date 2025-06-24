@@ -39,7 +39,7 @@ window#waybar {
     color: #88c0d0;
 }
 
-#custom-power:hover, #temperature.critical {
+#custom-power:hover, #temperature.critical, #cpu.critical, #battery.critical, #memory.critical {
     color: #bf616a;
 }
 
@@ -47,7 +47,7 @@ window#waybar {
     color: #d08770;
 }
 
-#custom-logout:hover {
+#custom-logout:hover, #cpu.warning, #battery.warning, #memory.warning {
     color: #ebcb8b;
 }
 

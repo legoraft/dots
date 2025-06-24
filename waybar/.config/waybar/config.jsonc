@@ -21,7 +21,7 @@
       "children-class": "settings-child",
       "transition-left-to-right": false
     },
-    "modules": [ "custom/settings", "temperature", "backlight", "wireplumber" ]
+    "modules": [ "custom/settings", "temperature", "cpu", "memory", "backlight", "wireplumber" ]
   },
   
   "group/network-group": {
@@ -85,6 +85,24 @@
       ""
     ],
     "critical-threshold": 90
+  },
+  
+  "cpu": {
+    "format": "{load}% ",
+    "tooltip": false,
+    "states": {
+      "warning": 75,
+      "critical": 90
+    }
+  },
+  
+  "memory": {
+    "format": "{percentage}% ",
+    "tooltip": false,
+    "states": {
+      "warning": 75,
+      "critical": 90
+    }
   },
   
   "backlight": {
