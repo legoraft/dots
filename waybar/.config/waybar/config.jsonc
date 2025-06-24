@@ -1,12 +1,22 @@
 {
   "layer": "top",
   "height": 22,
-  "modules-left": [ "clock" ],
+  "modules-left": [ "group/power", "clock", "custom/updates" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [  ],
+  "modules-right": [ "group/settings", "network", "battery" ],
+  
+  "group/power": {},
+  
+  "group/settings": {},
+  
+  "custom/updates": {},
+  
+  "network": {},
+  
+  "battery": {},
   
   "clock": {
-    "format": "{:%a %d %b %H:%M}",
+    "format": "{:%H:%M}",
     "timezone": "Europe/Amsterdam"
   },
 
