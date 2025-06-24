@@ -3,7 +3,7 @@
   "height": 22,
   "modules-left": [ "group/power", "clock", "custom/updates" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "group/settings", "network", "battery" ],
+  "modules-right": [ "group/settings", "group/network", "group/battery" ],
   
   "group/power": {
     "orientation": "inherit",
@@ -22,6 +22,26 @@
       "transition-left-to-right": false
     },
     "modules": [ "custom/settings", "backlight", "wireplumber" ]
+  },
+  
+  "group/network": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "settings-child",
+      "transition-left-to-right": false
+    },
+    "modules": [ "network", "network#name" ]
+  },
+  
+  "group/battery": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "settings-child",
+      "transition-left-to-right": false
+    },
+    "modules": [ "battery", "battery#percentage" ]
   },
   
   "custom/updates": {
@@ -78,12 +98,25 @@
     }
   },
   
+  "network#name": {
+    "interval": 60,
+    "tooltip": false,
+    "format-wifi": "{bandwidthDownBytes} {signalStrength}% {essid}",
+    "format-ethernet": "{bandwidthDownBytes} {ifname}"
+  },
+  
   "battery": {
     "interval": 60,
     "tooltip": false,
     "format": "{icon}",
     "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
     "format-charging": "{capacity}% 󰂄"
+  },
+  
+  "battery#percentage": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{capacity}%"
   },
   
   "clock": {
