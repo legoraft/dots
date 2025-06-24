@@ -48,6 +48,13 @@
     "on-click": "hyprctl dispatch exit"
   },
   
+  "backlight": {
+    "interval": 1,
+    "format": "{percent}% 󰌶"
+  },
+  
+  "wireplumber": {},
+  
   "network": {
     "interval": 60,
     "format": "{icon}",
