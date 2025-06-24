@@ -142,14 +142,23 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
-    "format-charging": "{capacity}% 󰂄"
+    "format-charging": "{capacity}% 󰂄",
+    "format-critical": "{capacity}% 󰂃",
+    "states": {
+      "warning": 25,
+      "critical": 10
+    }
   },
   
   "battery#percentage": {
     "interval": 60,
     "tooltip": false,
     "format": "{capacity}%",
-    "format-charging": ""
+    "format-charging": "",
+    "format-critical": "",
+    "states": {
+      "critical": 10
+    }
   },
   
   "clock": {
