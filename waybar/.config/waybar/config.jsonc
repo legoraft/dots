@@ -117,7 +117,8 @@
   "battery#percentage": {
     "interval": 60,
     "tooltip": false,
-    "format": "{capacity}%"
+    "format": "{capacity}%",
+    "format-charging": ""
   },
   
   "clock": {
