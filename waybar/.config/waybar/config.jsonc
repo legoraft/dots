@@ -18,7 +18,8 @@
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "children-class": "settings-child"
+      "children-class": "settings-child",
+      "transition-left-to-right": false
     },
     "modules": [ "custom/settings", "backlight", "wireplumber" ]
   },
