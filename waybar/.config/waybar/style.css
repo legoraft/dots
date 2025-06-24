@@ -38,3 +38,19 @@ window#waybar {
     background: transparent;
     color: #88c0d0;
 }
+
+#custom-power:hover {
+    color: #bf616a;
+}
+
+#custom-reboot:hover {
+    color: #d08770;
+}
+
+#custom-logout:hover {
+    color: #ebcb8b;
+}
+
+#power {
+    background: #2e3440;
+}
