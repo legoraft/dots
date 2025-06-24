@@ -84,7 +84,8 @@
     "format": "{volume}% {icon}",
     "format-icons": [ "", "", "" ],
     "format-muted": "",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
   
   "network": {
