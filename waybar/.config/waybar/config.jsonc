@@ -56,17 +56,20 @@
   
   "backlight": {
     "interval": 1,
+    "tooltip": false,
     "format": "{percent}% 󰌶"
   },
   
   "wireplumber": {
     "format": "{volume}% {icon}",
     "format-icons": [ "", "", "" ],
-    "format-muted": ""
+    "format-muted": "",
+    "tooltip": false
   },
   
   "network": {
     "interval": 60,
+    "tooltip": false,
     "format": "{icon}",
     "format-icons": {
       "wifi": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
@@ -77,6 +80,7 @@
   
   "battery": {
     "interval": 60,
+    "tooltip": false,
     "format": "{icon}",
     "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
     "format-charging": "{capacity}% 󰂄"
@@ -84,6 +88,7 @@
   
   "clock": {
     "format": "{:%H:%M}",
+    "tooltip": false,
     "timezone": "Europe/Amsterdam"
   },
 
