@@ -25,7 +25,7 @@ window#waybar {
 #workspaces button {
     all: unset;
     background: transparent;
-    color: #3b4252;
+    color: rgba(46, 52, 64, 0.8);
     margin: 0 0.2rem;
     padding-top: 0.1rem;
 }
@@ -36,7 +36,7 @@ window#waybar {
 
 #workspaces button.visible {
     background: transparent;
-    color: rgba(46, 52, 64, 0.6);
+    color: #88c0d0;
 }
 
 #custom-power:hover {
