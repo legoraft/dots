@@ -60,7 +60,7 @@
   },
   
   "wireplumber": {
-    "format": "{percent}% {icon}",
+    "format": "{volume}% {icon}",
     "format-icons": [ "", "", "" ],
     "format-muted": ""
   },
