@@ -9,3 +9,5 @@ These are the dotfiles I'm currently using on my computer. They're linked with `
 ![The zen browser with a glance homepage open](./assets/browser.png)
 
 ![A bunch of terminals with different outputs](./assets/terminals.png)
+
+<img src="./assets/desktop.png" width="50%">
