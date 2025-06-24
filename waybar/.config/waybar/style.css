@@ -51,11 +51,20 @@ window#waybar {
     color: #ebcb8b;
 }
 
-#power, #settings {
+#battery-group, #network-group {
+    padding: 0 0.4rem;
+}
+
+#network, #battery {
+    margin: 0.2rem;
+    padding: 0.1rem;
+}
+
+#power, #settings, #battery-group, #network-group {
     border-radius: 0.5rem;
     transition: background 0.3s;
 }
 
-#power:hover, #settings:hover {
+#power:hover, #settings:hover, #battery-group:hover, #network-group:hover {
     background: rgba(46, 52, 64, 0.6);
 }

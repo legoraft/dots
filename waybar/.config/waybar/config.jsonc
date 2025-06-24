@@ -1,9 +1,9 @@
 {
   "layer": "top",
-  "height": 22,
+  "height": 23,
   "modules-left": [ "group/power", "clock", "custom/updates" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "group/settings", "group/network", "group/battery" ],
+  "modules-right": [ "group/settings", "group/network-group", "group/battery-group" ],
   
   "group/power": {
     "orientation": "inherit",
@@ -24,21 +24,21 @@
     "modules": [ "custom/settings", "backlight", "wireplumber" ]
   },
   
-  "group/network": {
+  "group/network-group": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "children-class": "settings-child",
+      "children-class": "network-child",
       "transition-left-to-right": false
     },
     "modules": [ "network", "network#name" ]
   },
   
-  "group/battery": {
+  "group/battery-group": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "children-class": "settings-child",
+      "children-class": "battery-child",
       "transition-left-to-right": false
     },
     "modules": [ "battery", "battery#percentage" ]
@@ -102,8 +102,8 @@
   "network#name": {
     "interval": 2,
     "tooltip": false,
-    "format-wifi": "{bandwidthTotalBytes} {signalStrength}% {essid}",
-    "format-ethernet": "{bandwidthTotalBytes} {ifname}"
+    "format-wifi": "{bandwidthTotalBytes}  {signalStrength}%  {essid}",
+    "format-ethernet": "{bandwidthTotalBytes}  {ifname}"
   },
   
   "battery": {
