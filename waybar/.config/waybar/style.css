@@ -39,7 +39,7 @@ window#waybar {
     color: #88c0d0;
 }
 
-#custom-power:hover {
+#custom-power:hover, #temperature.critical {
     color: #bf616a;
 }
 

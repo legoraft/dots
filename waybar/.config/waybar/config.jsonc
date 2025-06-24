@@ -21,7 +21,7 @@
       "children-class": "settings-child",
       "transition-left-to-right": false
     },
-    "modules": [ "custom/settings", "backlight", "wireplumber" ]
+    "modules": [ "custom/settings", "temperature", "backlight", "wireplumber" ]
   },
   
   "group/network-group": {
@@ -72,6 +72,19 @@
   "custom/settings": {
     "format": "",
     "tooltip": false
+  },
+  
+  "temperature": {
+    "tooltip": false,
+    "format": "{temperatureC}° {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "critical-threshold": 90
   },
   
   "backlight": {
