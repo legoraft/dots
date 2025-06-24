@@ -52,5 +52,9 @@ window#waybar {
 }
 
 #power {
+    border-radius: 0.5rem;
+}
+
+#power:hover {
     background: #2e3440;
 }
