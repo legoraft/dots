@@ -5,11 +5,36 @@
   "modules-center": [ "hyprland/workspaces" ],
   "modules-right": [ "group/settings", "network", "battery" ],
   
-  "group/power": {},
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": "300",
+      "children-class": "power-child"
+    },
+    "modules": [ "custom/power", "custom/reboot", "custom/logout" ]
+  },
   
   "group/settings": {},
   
   "custom/updates": {},
+  
+  "custom/power": {
+    "format": "",
+    "tooltip": "false",
+    "on-click": "shutdown now"
+  },
+  
+  "custom/reboot": {
+    "format": "",
+    "tooltip": "false",
+    "on-click": "reboot"
+  },
+  
+  "custom/logout": {
+    "format": "󰍃",
+    "tooltip": "false",
+    "on-click": "hyprctl dispatch exit"
+  },
   
   "network": {},
   
