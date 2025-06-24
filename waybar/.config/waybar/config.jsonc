@@ -54,8 +54,8 @@
   "battery": {
     "interval": 60,
     "format": "{icon}",
-    "format-icons": [ "", "", "", "", "" ],
-    "format-charging": "{capacity}% "
+    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+    "format-charging": "{capacity}% 󰂄"
   },
   
   "clock": {
