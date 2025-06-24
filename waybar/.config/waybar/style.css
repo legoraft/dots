@@ -51,10 +51,11 @@ window#waybar {
     color: #ebcb8b;
 }
 
-#power {
+#power, #settings {
     border-radius: 0.5rem;
+    transition: background 1s;
 }
 
-#power:hover {
+#power:hover, #settings:hover {
     background: #2e3440;
 }
