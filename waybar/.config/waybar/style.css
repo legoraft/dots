@@ -64,11 +64,11 @@ window#waybar {
     color: #eceff4;
 }
 
-#power, #settings, #battery-group, #network-group {
+#power, #settings, #battery-group, #network-group, #tray-group {
     border-radius: 0.8rem;
     transition: background 0.3s;
 }
 
-#power:hover, #settings:hover, #battery-group:hover, #network-group:hover {
+#power:hover, #settings:hover, #battery-group:hover, #network-group:hover, #tray-group:hover {
     background: rgba(46, 52, 64, 0.6);
 }
