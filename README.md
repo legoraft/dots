@@ -27,3 +27,4 @@ This rice is based around Hyprland, a wayland compositor. It is made to my prefe
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch), fetch that runs on startup, heavily customized with custom lifetime script
 - [imv](https://sr.ht/~exec64/imv), simple cli-based image viewer
 - [eza](https://https://eza.rocks), better nicer-looking ls clone
+- [yazi](https://yazi-rs.github.io), a fast, good-looking terminal file manager
