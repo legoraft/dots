@@ -7,6 +7,36 @@ configuration {
     drun-display-format: "{name}";
 }
 
+@import "colors.rasi"
+
+* {
+    border-color: none;
+    
+    background-color: var(background);
+    normal-background: var(background);
+    urgent-background: var(background);
+    active-background: var(background);
+    alternate-background: var(background);
+    alternate-normal-background: var(background);
+    alternate-urgent-background: var(background);
+    alternate-active-background: var(background);
+    selected-normal-background: var(selected);
+    selected-urgent-background: var(selected);
+    selected-active-background: var(selected);
+
+    foreground-color: var(foreground);
+    normal-foreground: var(foreground);
+    urgent-foreground: var(foreground);
+    active-foreground: var(foreground);
+    alternate-foreground: var(foreground);
+    alternate-normal-foreground: var(foreground);
+    alternate-urgent-foreground: var(foreground);
+    alternate-active-foreground: var(foreground);
+    selected-normal-foreground: var(foreground);
+    selected-urgent-foreground: var(foreground);
+    selected-active-foreground: var(foreground);
+}
+
 textbox-prompt-colon {
     str: "";
 }
