@@ -1,91 +1,145 @@
 configuration {
-    modes: [ drun, calc ];
+    modes: [ drun ];
     show-icons: true;
-    display-drun: "  ";
-    display-calc: "󰾞  ";
+    display-drun: "";
     font: "Lato 16";
     drun-display-format: "{name}";
 }
 
 @import "colors.rasi"
 
-* {
-    border-color: none;
-    
-    background-color: transparent;
-    normal-background: transparent;
-    urgent-background: transparent;
-    active-background: transparent;
-    alternate-background: transparent;
-    alternate-normal-background: transparent;
-    alternate-urgent-background: transparent;
-    alternate-active-background: transparent;
-    selected-normal-background: var(selected);
-    selected-urgent-background: var(selected);
-    selected-active-background: var(selected);
-
-    foreground-color: var(foreground);
-    normal-foreground: var(foreground);
-    urgent-foreground: var(foreground);
-    active-foreground: var(foreground);
-    alternate-foreground: var(foreground);
-    alternate-normal-foreground: var(foreground);
-    alternate-urgent-foreground: var(foreground);
-    alternate-active-foreground: var(foreground);
-    selected-normal-foreground: var(foreground);
-    selected-urgent-foreground: var(foreground);
-    selected-active-foreground: var(foreground);
-}
-
 window {
-    border-radius: 0.4em;
-    background-color: var(background);
+    transparency: "real";
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    width: 700px;
+    
+    enabled: true;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background-color: @background;
 }
 
-mainbox, prompt {
+mainbox {
+    enabled: true;
+    spacing: 10px;
+    margin: 0;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
     background-color: transparent;
-    text-color: inherit;
-    children: [ inputbar, message, listview ];
+    children: [ inputbar, listview ];
 }
 
 inputbar {
-    background-color: transparent;
-    border-radius: 0.4em;
+    enabled: true;
+    spacing: 10px;
+    margin: 0;
+    padding: 15px;
+    border-radius: 12px;
     border: none;
-    children: [ "prompt", "entry" ];
-    padding: 0.2em 0.4em;
-    margin: 0.2em 0;
+    background-color: @background-alt;
+    text-color: @foreground;
+    children: [ prompt, entry ];
 }
 
-entry {
-    background-color: transparent;
-    placeholder: "Type something...";
-    placeholder-color: var(dim);
+prompt {
+    enabled: true;
+    background-color: inherit;
     text-color: inherit;
 }
 
 textbox-prompt-colon {
-    str: "";
+    enabled: true;
+    expand: false;
+    str: "::";
+    background: inherit;
+    text-color: inherit;
+}
+
+entry {
+    enabled: true;
+    background-color: inherit;
+    text-color: inherit;
+    placeholder: "Search...";
+    placeholder-color: inherit;
 }
 
 listview {
-    background-color: transparent;
+    enabled: true;
+    columns: 2;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
     scrollbar: false;
-    spacing: 0.1em;
-    lines: 10;
-    border-radius: 0.4em;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+
+    spacing: 5px;
+    margin: 0;
+    padding: 0;
     border: none;
+    border-radius: 0;
+    background-color: transparent;
+    text-color: @foreground;
 }
 
 element {
-    padding: 0.25em 0.5em;
-    border-radius: 0.4em;
+    enabled: true;
+    spacing: 10px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 12px;
     background-color: transparent;
+    text-color: @foreground;
+    cursor: pointer;
 }
 
-message {
-    border: none;
+element normal.normal {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @background;
+}
+
+element-icon {
     background-color: transparent;
-    padding: 0;
-    margin: 0;
+    text-color: inherit;
+    size: 32px;
+    cursor: inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    highlight: inherit;
+    cursor: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+error-message {
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 12px;
+    border-color: @selected;
+    background-color: @background;
+    text-color: @foreground;
+}
+
+textbox {
+    background-color: @background;
+    text-color: @foreground;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    highlight: none;
 }
