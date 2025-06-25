@@ -6,3 +6,7 @@ configuration {
     font: "Lato 16";
     drun-display-format: "{name}";
 }
+
+textbox-prompt-colon {
+    str: "";
+}
