@@ -48,7 +48,7 @@ inputbar {
 
 prompt {
     enabled: true;
-    background-color: inherit;
+    background-color: transparent;
     text-color: inherit;
 }
 
@@ -56,13 +56,13 @@ textbox-prompt-colon {
     enabled: true;
     expand: false;
     str: "::";
-    background: inherit;
+    background: transparent;
     text-color: inherit;
 }
 
 entry {
     enabled: true;
-    background-color: inherit;
+    background-color: transparent;
     text-color: inherit;
     placeholder: "Search...";
     placeholder-color: inherit;
@@ -102,7 +102,7 @@ element {
 }
 
 element normal.normal, element alternate.normal {
-    background-color: @background;
+    background-color: transparent;
     text-color: @foreground;
 }
 
