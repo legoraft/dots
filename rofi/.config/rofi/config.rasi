@@ -1,7 +1,7 @@
 configuration {
     modes: [ drun, calc ];
     show-icons: true;
-    display-drun: "";
+    display-drun: "  ";
     display-calc: "󰾞";
     font: "Lato 16";
     drun-display-format: "{name}";
@@ -50,8 +50,10 @@ mainbox, prompt {
 inputbar {
     background-color: transparent;
     border-radius: 0.4em;
+    border: none;
     children: [ "prompt", "entry" ];
     padding: 0.2em 0.4em;
+    margin: 0.2em 0;
 }
 
 entry {
@@ -70,6 +72,7 @@ listview {
     scrollbar: false;
     spacing: 0.1em;
     border-radius: 0.4em;
+    border: none;
 }
 
 element {
