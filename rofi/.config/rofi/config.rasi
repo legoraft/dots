@@ -2,7 +2,7 @@ configuration {
     modes: [ drun, calc ];
     show-icons: true;
     display-drun: "  ";
-    display-calc: "󰾞";
+    display-calc: "󰾞  ";
     font: "Lato 16";
     drun-display-format: "{name}";
 }
@@ -12,14 +12,14 @@ configuration {
 * {
     border-color: none;
     
-    background-color: var(background);
-    normal-background: var(background);
-    urgent-background: var(background);
-    active-background: var(background);
-    alternate-background: var(background);
-    alternate-normal-background: var(background);
-    alternate-urgent-background: var(background);
-    alternate-active-background: var(background);
+    background-color: transparent;
+    normal-background: transparent;
+    urgent-background: transparent;
+    active-background: transparent;
+    alternate-background: transparent;
+    alternate-normal-background: transparent;
+    alternate-urgent-background: transparent;
+    alternate-active-background: transparent;
     selected-normal-background: var(selected);
     selected-urgent-background: var(selected);
     selected-active-background: var(selected);
@@ -38,13 +38,14 @@ configuration {
 }
 
 window {
-    transparency: "real";
     border-radius: 0.4em;
+    background-color: var(background);
 }
 
 mainbox, prompt {
     background-color: transparent;
     text-color: inherit;
+    children: [ inputbar, message, listview ];
 }
 
 inputbar {
@@ -58,7 +59,7 @@ inputbar {
 
 entry {
     background-color: transparent;
-    placeholder: "Search...";
+    placeholder: "Type something...";
     placeholder-color: var(dim);
     text-color: inherit;
 }
@@ -71,6 +72,7 @@ listview {
     background-color: transparent;
     scrollbar: false;
     spacing: 0.1em;
+    lines: 10;
     border-radius: 0.4em;
     border: none;
 }
@@ -78,8 +80,12 @@ listview {
 element {
     padding: 0.25em 0.5em;
     border-radius: 0.4em;
+    background-color: transparent;
 }
 
-element normal.normal, element alternate.normal {
+message {
+    border: none;
     background-color: transparent;
+    padding: 0;
+    margin: 0;
 }
