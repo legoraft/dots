@@ -101,7 +101,7 @@ element {
     cursor: pointer;
 }
 
-element normal.normal {
+element normal.normal, element alternate.normal {
     background-color: @background;
     text-color: @foreground;
 }
