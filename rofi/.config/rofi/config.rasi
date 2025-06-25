@@ -37,6 +37,46 @@ configuration {
     selected-active-foreground: var(foreground);
 }
 
+window {
+    transparency: "real";
+    border-radius: 0.4em;
+}
+
+mainbox, prompt {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+inputbar {
+    background-color: transparent;
+    border-radius: 0.4em;
+    children: [ "prompt", "entry" ];
+    padding: 0.2em 0.4em;
+}
+
+entry {
+    background-color: transparent;
+    placeholder: "Search...";
+    placeholder-color: var(dim);
+    text-color: inherit;
+}
+
 textbox-prompt-colon {
     str: "";
+}
+
+listview {
+    background-color: transparent;
+    scrollbar: false;
+    spacing: 0.1em;
+    border-radius: 0.4em;
+}
+
+element {
+    padding: 0.25em 0.5em;
+    border-radius: 0.4em;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: transparent;
 }
