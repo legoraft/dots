@@ -70,7 +70,7 @@
   "custom/reboot": {
     "format": "",
     "tooltip": false,
-    "on-click": "reboot"
+    "on-click": "$HOME/.config/waybar/scripts/killwindows.sh && sleep 1 && reboot"
   },
   
   "custom/logout": {
