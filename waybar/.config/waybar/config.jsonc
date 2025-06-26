@@ -64,7 +64,7 @@
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "shutdown now"
+    "on-click": "shutdown -h now"
   },
   
   "custom/reboot": {
