@@ -64,7 +64,7 @@
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "shutdown -h now"
+    "on-click": "./scripts/killwindow.sh && systemctl poweroff"
   },
   
   "custom/reboot": {
