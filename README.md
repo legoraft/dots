@@ -14,6 +14,8 @@ This rice is based around Hyprland, a wayland compositor. It is made to my prefe
 
 - [hyprland](https://hypr.land), used as a compositor.
 - [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper/), the wallpaper daemon, doesn't have a config file in this git repo.
+- [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/), idle daemon, ensuring screen turns off on correct moments.
+- [hypridle]((https://wiki.hypr.land/Hypr-Ecosystem/hypridle/)), lockscreen, styled like the MacOS lockscreen.
 - [mako](https://github.com/emersion/mako), the notification daemon
 - [pipewire](https://pipewire.org), sound daemon used with `wireplumber` to change volume
 - [waybar](https://github.com/Alexays/Waybar), bar with config inspired by [elifouts' dots](https://github.com/elifouts/Dotfiles)
