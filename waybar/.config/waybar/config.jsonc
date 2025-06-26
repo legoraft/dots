@@ -64,7 +64,7 @@
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "$HOME/.config/waybar/scripts/killwindows.sh && sleep 2 && systemctl poweroff"
+    "on-click": "$HOME/.config/waybar/scripts/killwindows.sh && sleep 1 && systemctl poweroff"
   },
   
   "custom/reboot": {
