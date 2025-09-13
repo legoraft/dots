@@ -3,7 +3,7 @@
   "height": 40,
   "modules-left": [ "group/power", "clock", "custom/updates" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "group/tray-group", "group/network-group", "group/battery-group", "group/settings" ],
+  "modules-right": [ "group/tray-group", "group/network-group", "group/settings" ],
   
   "group/power": {
     "orientation": "inherit",
@@ -21,7 +21,7 @@
       "children-class": "settings-child",
       "transition-left-to-right": false
     },
-    "modules": [ "custom/settings", "backlight", "wireplumber" ]
+    "modules": [ "custom/settings", "wireplumber" ]
   },
   
   "group/tray-group": {
