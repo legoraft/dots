@@ -1,13 +1,13 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  
+
   "display": {
     "separator": "  ",
     "size": {
       "binaryPrefix": "si"
     }
   },
-  
+
   "logo": {
     "type": "small",
     "padding": {
@@ -16,7 +16,7 @@
       "right": 8
     }
   },
-  
+
   "modules": [
     {
       "type": "os",
@@ -30,9 +30,9 @@
       "keyColor": "cyan",
       "format": "{1} pkgs"
     },
-    
+
     "break",
-    
+
     {
       "type": "cpu",
       "key": "",
@@ -41,6 +41,7 @@
     },
     {
       "type": "gpu",
+      "hideType": "integrated",
       "key": "󰈐",
       "keyColor": "green",
       "format": "{vendor} {name}"
@@ -51,9 +52,9 @@
       "keyColor": "green",
       "format": "{used} / {total}"
     },
-    
+
     "break",
-    
+
     {
       "type": "shell",
       "key": "",
@@ -66,16 +67,16 @@
       "keyColor": "yellow",
       "format": "{1}"
     },
-    
+
     "break",
-    
+
     {
       "type": "command",
       "key": "󰚰",
       "text": "lifetime -p",
       "format": "{result} days installed"
     },
-    
+
     {
       "type": "uptime",
       "key": "󰐥",
