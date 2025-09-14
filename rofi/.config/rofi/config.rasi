@@ -14,7 +14,7 @@ window {
     anchor: center;
     fullscreen: false;
     width: 700px;
-    
+
     enabled: true;
     margin: 0;
     padding: 0;
