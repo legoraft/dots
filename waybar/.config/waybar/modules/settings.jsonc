@@ -1,0 +1,30 @@
+{
+  "group/settings": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "settings-child",
+      "transition-left-to-right": false
+    },
+    "modules": [ "custom/settings", "wireplumber" ]
+  },
+  
+  "custom/settings": {
+    "format": "",
+    "tooltip": false
+  },
+  
+  "backlight": {
+    "interval": 1,
+    "tooltip": false,
+    "format": "{percent}% 󰌵"
+  },
+  
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-icons": [ "", "", "" ],
+    "format-muted": "",
+    "tooltip": false,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  }
+}
