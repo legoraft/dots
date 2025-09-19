@@ -1,0 +1,29 @@
+{
+  "group/network-group": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "network-child",
+      "transition-left-to-right": false
+    },
+    "modules": [ "network", "network#name" ]
+  },
+  
+  "network": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+      "ethernet": [ "󰌹" ],
+      "disconnected": [ "󰌺" ]
+    }
+  },
+  
+  "network#name": {
+    "interval": 2,
+    "tooltip": false,
+    "format-wifi": "{bandwidthTotalBytes}  {signalStrength}%  {essid}",
+    "format-ethernet": "{bandwidthTotalBytes}  {ifname}"
+  }
+}

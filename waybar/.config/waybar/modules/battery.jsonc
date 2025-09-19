@@ -1,0 +1,35 @@
+{
+  "group/battery-group": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "battery-child",
+      "transition-left-to-right": false
+    },
+    "modules": [ "battery", "battery#percentage" ]
+  },
+  
+  "battery": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+    "format-charging": "{capacity}% 󰂄",
+    "format-critical": "{capacity}% 󰂃",
+    "states": {
+      "warning": 25,
+      "critical": 10
+    }
+  },
+  
+  "battery#percentage": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{capacity}%",
+    "format-charging": "",
+    "format-critical": "",
+    "states": {
+      "critical": 10
+    }
+  }
+}

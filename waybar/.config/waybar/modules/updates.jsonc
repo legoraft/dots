@@ -1,0 +1,8 @@
+{
+  "custom/updates": {
+    "format": "  {}",
+    "interval": 1800,   
+    "exec": "checkupdates | wc -l",
+    "tooltip": false
+  }
+}

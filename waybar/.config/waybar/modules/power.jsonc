@@ -1,0 +1,28 @@
+{
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "power-child"
+    },
+    "modules": [ "custom/power", "custom/reboot", "custom/logout" ]
+  },
+  
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "$HOME/.config/waybar/scripts/killwindows.sh && sleep 1 && systemctl poweroff"
+  },
+  
+  "custom/reboot": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "$HOME/.config/waybar/scripts/killwindows.sh && sleep 1 && reboot"
+  },
+  
+  "custom/logout": {
+    "format": "󰍃",
+    "tooltip": false,
+    "on-click": "hyprctl dispatch exit"
+  }
+}
