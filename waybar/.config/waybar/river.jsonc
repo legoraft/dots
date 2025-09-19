@@ -1,0 +1,13 @@
+{
+  "layer": "top",
+  "height": 40,
+  "include": [ "./modules/battery.jsonc", "./modules/network.jsonc", "./modules/power.jsonc", "./modules/settings.jsonc", "./modules/tray.jsonc", "./modules/updates.jsonc" ],
+  "modules-left": [ "group/power", "clock", "custom/updates-arch" ],
+  "modules-center": [ "river/tags" ],
+  "modules-right": [ "group/tray-group", "group/network-group", "group/battery-group", "group/settings" ],
+  
+  "river/tags": {
+    "num-tags": 5,
+    "tag-labels": [ "", "", "", "", "" ]
+  }
+}
