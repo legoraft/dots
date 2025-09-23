@@ -1,2 +1,43 @@
 #!/bin/sh
 
+# -- Keybinds --
+
+# Management
+riverctl map normal Super Q close
+riverctl map normal Super Tab focus-view next
+riverctl map normal Super+Shift Tab focus-view previous
+riverctl map normal Super P spawn "pkill waybar && waybar"
+
+# Switch workspaces and move windows to workspaces
+for i in $(seq 1 5)
+do
+    tags=$((1 << ($i - 1)))
+
+    # Super+[1-9] to focus tag [0-8]
+    riverctl map normal Super $i set-focused-tags $tags
+
+    # Super+Shift+[1-9] to tag focused view with tag [0-8]
+    riverctl map normal Super+Shift $i set-view-tags $tags
+done
+
+# Applications
+riverctl map normal Super Return spawn kitty
+riverctl map normal Super Space spawn "rofi -show"
+riverctl map normal Super W spawn "$HOME/Applications/ZenBrowser.AppImage"
+riverctl map normal Super E spawn zeditor
+
+# Screenshots
+riverctl map normal Super S spawn "$HOME/.local/bin/screenshot -f"
+riverctl map normal Super+Shift S spawn "$HOME/.local/bin/screenshot -s"
+
+# Laptop multimedia keys for volume and LCD brightness
+riverctl map normal None XF86AudioRaiseVolume spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+riverctl map normal None XF86AudioLowerVolume spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+riverctl map normal None XF86AudioMute spawn "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+riverctl map normal None XF86MonBrightnessUp spawn "brightnessctl set +5%"
+riverctl map normal None XF86MonBrightnessDown spawn "brightnessctl set 5%-"
+
+# -- Layout ---
+riverctl default-layout rivertile
+rivertile -view-padding 3 -outer-padding 5 &
