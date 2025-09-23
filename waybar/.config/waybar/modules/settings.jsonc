@@ -6,11 +6,20 @@
       "children-class": "settings-child",
       "transition-left-to-right": false
     },
-    "modules": [ "custom/settings", "wireplumber" ]
+    "modules": [ "custom/settings", "idle_inhibitor", "wireplumber" ]
   },
   
   "custom/settings": {
     "format": "",
+    "tooltip": false
+  },
+  
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󱐋",
+      "deactivated": "󰒲"
+    },
     "tooltip": false
   },
   
