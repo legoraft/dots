@@ -6,6 +6,12 @@
   "modules-center": [ "hyprland/workspaces" ],
   "modules-right": [ "group/tray-group", "group/network-group", "group/settings" ],
   
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false,
+    "timezone": "Europe/Amsterdam"
+  },
+  
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
