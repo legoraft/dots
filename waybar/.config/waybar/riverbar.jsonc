@@ -6,6 +6,12 @@
   "modules-center": [ "river/tags" ],
   "modules-right": [ "group/tray-group", "group/network-group", "group/battery-group", "group/settings" ],
   
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false,
+    "timezone": "Europe/Amsterdam"
+  },
+  
   "river/tags": {
     "num-tags": 5,
     "tag-labels": [ "", "", "", "", "" ]
