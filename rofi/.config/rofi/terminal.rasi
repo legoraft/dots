@@ -2,7 +2,7 @@ configuration {
     modes: [ drun ];
     show-icons: true;
     display-drun: "";
-    font: "Lato 16";
+    font: "Source Code Pro 16";
     drun-display-format: "{name}";
 }
 
@@ -13,7 +13,7 @@ window {
     location: center;
     anchor: center;
     fullscreen: false;
-    width: 700px;
+    width: 600px;
 
     enabled: true;
     margin: 0;
