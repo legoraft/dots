@@ -81,6 +81,8 @@
       "type": "uptime",
       "key": "󰐥",
       "format": "{2} hrs, {3} mins"
-    }
+    },
+    
+    "break"
   ]
 }
