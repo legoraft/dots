@@ -6,7 +6,7 @@
       "children-class": "settings-child",
       "transition-left-to-right": false
     },
-    "modules": [ "custom/settings", "idle_inhibitor", "wireplumber" ]
+    "modules": [ "custom/settings", "idle_inhibitor", "backlight", "wireplumber" ]
   },
   
   "custom/settings": {
