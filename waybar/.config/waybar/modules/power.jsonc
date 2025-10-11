@@ -20,6 +20,12 @@
     "on-click": "$HOME/.config/waybar/scripts/killwindows.sh && sleep 1 && reboot"
   },
   
+  "custom/lock": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "hyprlock"
+  }
+  
   "custom/logout": {
     "format": "󰍃",
     "tooltip": false,
